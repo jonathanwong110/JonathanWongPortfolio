@@ -1,8 +1,19 @@
-#skills, #about {
+#about, #skills, #socialmedia {
     margin-right: 30px;
 }
 
-.individual-skill {
+.individual-skill, .individual-project {
     display: inline-block;
     padding: 30px;
+    margin-right: 100px;
+}
+
+.individual-skill-heading {
+    text-align: center;
+}
+
+.individual-media {
+    display: inline-block;
+    padding: 5px;
+    margin-left: 13px;
 }
