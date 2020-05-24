@@ -1,11 +1,16 @@
+
 #about, #skills, #socialmedia {
     margin-right: 30px;
+}
+
+#socialmedia {
+    margin-right: 5px;
 }
 
 .individual-skill, .individual-project {
     display: inline-block;
     padding: 30px;
-    margin-right: 100px;
+    margin-right: 50px;
 }
 
 .individual-skill-heading {
@@ -16,4 +21,12 @@
     display: inline-block;
     padding: 5px;
     margin-left: 13px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color:black;
+  color: white;
+  text-align: center;
+  font-size: 20px;
 }
