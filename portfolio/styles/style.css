@@ -31,14 +31,23 @@
 }
 
 .project-image {
+    width:55%;
+    margin-right:2%;
     float: left;
 }
 
 .project-info {
-    float: right;
-    margin-left: auto;
+    width:42%;
+    float: left;
 }
 
 .category-heading {
     text-align: center;
+}
+
+.individual-stat {
+    display: inline-block;
+    text-align: center;
+    margin: 5%;
+    margin-left: 28%
 }
