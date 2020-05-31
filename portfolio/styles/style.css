@@ -9,7 +9,8 @@
 .individual-skill, .individual-project {
     display: inline-block;
     padding: 30px;
-    margin-right: 50px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .individual-skill-heading {
@@ -27,7 +28,7 @@
   background-color:black;
   color: white;
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .project-image {
@@ -49,9 +50,21 @@
     display: inline-block;
     text-align: center;
     margin: auto;
-    margin-left: 28%;
+    margin-left: 22%;
     border-style: solid;
-    padding: 30px
+    border-color: black;
+    padding: 30px;
+    height: 200px;
+    width: 200px;
+}
+
+.individual-stat-number {
+    font-size: 50px;
+}
+
+.individual-stat-category {
+    color: #1ab2ff;
+    font-weight: bold;
 }
 
 .button {
