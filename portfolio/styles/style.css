@@ -1,26 +1,27 @@
 #about, #skills, #socialmedia {
-    margin-right: 30px;
-}
-
-#socialmedia {
-    margin-right: 5px;
+  margin-right: 30px;
 }
 
 .individual-skill, .individual-project {
-    display: inline-block;
-    padding: 30px;
-    margin-right: auto;
-    margin-left: auto;
+  display: inline-block;
+  padding: 30px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .individual-skill-heading {
-    text-align: center;
+  text-align: center;
+}
+
+.all-individual-media {
+  margin-left: 38%;
 }
 
 .individual-media {
-    display: inline-block;
-    padding: 5px;
-    margin-left: 13px;
+  display: inline-block;
+  padding: 10px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .topnav {
@@ -32,39 +33,39 @@
 }
 
 .project-image {
-    width:55%;
-    margin-right:2%;
-    float: left;
+  width:55%;
+  margin-right:2%;
+  float: left;
 }
 
 .project-info {
-    width: 42%;
-    float: left;
+  width: 42%;
+  float: left;
 }
 
 .category-heading {
-    text-align: center;
+  text-align: center;
 }
 
 .individual-stat {
-    display: inline-block;
-    text-align: center;
-    margin: auto;
-    margin-left: 22%;
-    border-style: solid;
-    border-color: black;
-    padding: 30px;
-    height: 200px;
-    width: 200px;
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+  margin-left: 22%;
+  border-style: solid;
+  border-color: black;
+  padding: 30px;
+  height: 200px;
+  width: 200px;
 }
 
 .individual-stat-number {
-    font-size: 50px;
+  font-size: 50px;
 }
 
 .individual-stat-category {
-    color: #1ab2ff;
-    font-weight: bold;
+  color: #1ab2ff;
+  font-weight: bold;
 }
 
 .button {
