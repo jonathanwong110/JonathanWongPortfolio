@@ -1,4 +1,9 @@
-#about, #skills, #socialmedia {
+.background-color {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+#about, #skills, #contact {
   margin-right: 30px;
 }
 
@@ -14,7 +19,7 @@
 }
 
 .all-individual-media {
-  margin-left: 38%;
+  margin-left: 35%;
 }
 
 .individual-media {
@@ -84,7 +89,7 @@
   margin: auto;
   margin-left: 22%;
   border-style: solid;
-  border-color: black;
+  border-color: white;
   padding: 30px;
   height: 200px;
   width: 200px;
@@ -137,4 +142,33 @@
 .button:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+.button:link {
+  text-decoration: none;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+}
+
+.separator::before, .separator::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #bbb;
+}
+
+.separator::before {
+  margin-right: .25em;
+}
+
+.separator::after {
+  margin-left: .25em;
+}
+
+hr.solid {
+  border-top: 3px solid #bbb
 }
