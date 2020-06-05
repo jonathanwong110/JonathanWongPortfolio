@@ -1,10 +1,24 @@
-.background-color {
-  background-color: #1a1a1a;
+.image-text {
+  position: absolute;
+  bottom: 41%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
+  font-size: 50px;
+}
+
+
+.dark-mode {
+  background-color: #252525;
+  color: rgb(159, 162, 165);
 }
 
 #about, #skills, #contact {
   margin-right: 30px;
+}
+
+.about-text {
+  font-size: 18px;
 }
 
 .individual-skill, .individual-project {
@@ -100,14 +114,15 @@
 }
 
 .individual-stat-category {
-  color: #1ab2ff;
+  color: #237fad;
   font-weight: bold;
+  font-size: 20px;
 }
 
 .button {
   display: inline-block;
   border-radius: 4px;
-  background-color: #1ab2ff;
+  background-color: #336c8d;
   border: none;
   color: #FFFFFF;
   text-align: center;
@@ -117,6 +132,7 @@
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
+  font-weight: bold;
 }
 
 .button span {
@@ -137,6 +153,7 @@
 
 .button:hover span {
   padding-right: 25px;
+  text-decoration: none;
 }
 
 .button:hover span:after {
@@ -146,6 +163,11 @@
 
 .button:link {
   text-decoration: none;
+  color: white;
+}
+
+.category-heading {
+  margin: 40px;
 }
 
 .separator {
@@ -158,7 +180,7 @@
 .separator::before, .separator::after {
   content: '';
   flex: 1;
-  border-bottom: 1px solid #bbb;
+  border-bottom: 3px solid #bbb;
 }
 
 .separator::before {
@@ -170,5 +192,74 @@
 }
 
 hr.solid {
-  border-top: 3px solid #bbb
+  border-top: 1px solid #bbb
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  top: 7.5px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.navbar-description {
+  color: #9d9d9d;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-right: 12px;
+  font-size: 14px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
