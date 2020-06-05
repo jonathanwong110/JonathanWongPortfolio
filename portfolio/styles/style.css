@@ -7,6 +7,15 @@
   font-size: 50px;
 }
 
+.image-text2 {
+  position: absolute;
+  bottom: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 35px;
+}
+
 .dark-mode {
   background-color: #252525;
   color: rgb(159, 162, 165);
@@ -102,7 +111,7 @@
   margin: auto;
   margin-left: 22%;
   border-style: solid;
-  border-color: white;
+  border-color: #ccc;
   padding: 30px;
   height: 200px;
   width: 200px;
