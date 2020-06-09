@@ -1,21 +1,23 @@
 .image-text {
   position: absolute;
-  bottom: 41%;
+  bottom: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   font-size: 50px;
   font-weight: bold;
+  text-align: center;
 }
 
 .image-text2 {
   position: absolute;
-  bottom: 35%;
+  bottom: 24%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   font-size: 35px;
   font-weight: bold;
+  text-align: center;
 }
 
 .dark-mode {
@@ -133,13 +135,15 @@
 }
 
 .button {
+  display: inline-block;
   background-color: #336c8d;
   border: none;
   color: black;
-  padding: 16px 32px;
+  padding: 15px 25px;
   text-align: center;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 30px;
+  margin-left: 0px;
   transition: 0.3s;
   font-weight: bold;
 }
