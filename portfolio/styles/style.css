@@ -1,6 +1,6 @@
-.image-text {
+.image-text-heading-1 {
   position: absolute;
-  bottom: 45%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -9,9 +9,9 @@
   text-align: center;
 }
 
-.image-text2 {
+.image-text-heading-2 {
   position: absolute;
-  bottom: 24%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
