@@ -33,11 +33,15 @@
   font-size: 18px;
 }
 
-.individual-skill, .individual-project {
+.all-individual-skills {
+  margin-left: 5%;
+}
+
+.individual-skill {
   display: inline-block;
   padding: 30px;
-  margin-right: auto;
-  margin-left: auto;
+  height: 175px;
+  width: 175px;
 }
 
 .individual-skill-heading {
@@ -94,6 +98,13 @@
   color: white;
   text-align: center;
   font-size: 18px;
+}
+
+.individual-project {
+  display: inline-block;
+  padding: 30px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .project-image {
