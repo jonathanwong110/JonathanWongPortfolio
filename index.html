@@ -10,39 +10,43 @@
   <title>Jonathan Wong</title>
 
   <link rel="stylesheet" href="portfolio/styles/style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 </head>
 
 <body>
-  <nav class="navbar navbar-inverse navbar-fixed-top" id="navbar">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Welcome</a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#stats">Stats</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li class="navbar-description">Dark Mode</li>
-          <label class="switch" for="checkbox">
-            <input type="checkbox" id="checkbox">
-            <span class="slider round"></span>
-          </label>
-        </ul>
-      </div>
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+    <a class="navbar-brand" href="#">Welcome</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#stats">Stats</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="navbar-description">Dark Mode</li>
+        <label class="switch" for="checkbox">
+          <input type="checkbox" id="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </ul>
     </div>
   </nav>
 
@@ -150,7 +154,7 @@
           <div class="individual-skill">
             <img src="portfolio/img/icons/rails.png" alt="Rails" width="100" height="100">
             <h3 class="individual-skill-heading">
-              Ruby on Rails
+              Rails
             </h3>
           </div>
 
@@ -267,45 +271,27 @@
       <br></br>
       <div class="row">
 
-        <div class="individual-project">
-          <div class="card">
-            <img src="portfolio/img/projects/bookstore.png" alt="bookstore" style="width:100%" class="project-image">
-            <div class="container">
-            </div>
-          </div>
-          <div class="project-info">
-            <h3> BookStore </h3>
+        <div class="card" style="width:300px">
+          <img class="card-img-top" src="portfolio/img/projects/bookstore.png" alt="Card image" style="width:100%" id="project-image">
+          <div class="card-body">
             <br>
-            <h4>E-commerce web-app for users to purchase books</h4>
-            <br>
-            <p>Tools: React, Redux, Ruby on Rails API, Thunk, react-router, Bootstrap, HTML</p>
-            <a href="https://github.com/jonathanwong110/bookstore" target="_blank" class="button">
-              GitHub
-            </a>
+            <h4 class="card-title">BookStore</h4>
+            <h5 class="card-text">E-commerce web-app for users to purchase books </h5>
+            <p class="card-text">Tools: React, Redux, Ruby on Rails API, Thunk, react-router, Bootstrap, HTML, CSS</p>
+            <a href="https://github.com/jonathanwong110/bookstore" target="_blank" class="button">GitHub</a>
             <a href="https://youtu.be/VQfR3-5u-Bc" target="_blank" class="button">
               Demo
             </a>
           </div>
         </div>
 
-        <br></br>
-
-        <hr class="solid">
-
-        <br></br>
-
-        <div class="individual-project">
-          <div class="card">
-            <img src="portfolio/img/projects/purchasetracker.png" alt="purchasetracker" style="width:100%" class="project-image">
-            <div class="container">
-            </div>
-          </div>
-          <div class="project-info">
-            <h3> Purchase-Tracker </h3>
+        <div class="card" style="width:300px">
+          <img class="card-img-top" src="portfolio/img/projects/purchasetracker.png" alt="Card image" style="width:100%" id="project-image">
+          <div class="card-body">
             <br>
-            <h4>A web app to record and keep track of your purchases</h4>
-            <br>
-            <p>Tools: JavaScript, Ruby on Rails API, HTML, CSS, active_model_serializers</p>
+            <h4 class="card-title">Purchase-Tracker</h4>
+            <h5 class="card-text">A web app to record and keep track of your purchases </h5>
+            <p class="card-text">Tools: JavaScript, Ruby on Rails API, HTML, CSS, active_model_serializers</p>
             <a href="https://github.com/jonathanwong110/purchase-tracker" target="_blank" class="button">
               GitHub
             </a>
@@ -315,24 +301,13 @@
           </div>
         </div>
 
-        <br></br>
-
-        <hr class="solid">
-
-        <br></br>
-
-        <div class="individual-project">
-          <div class="card">
-            <img src="portfolio/img/projects/megastore.png" alt="megastore" style="width:100%" class="project-image">
-            <div class="container">
-            </div>
-          </div>
-          <div class="project-info">
-            <h3>MegaStore</h3>
+        <div class="card" style="width:300px">
+          <img class="card-img-top" src="portfolio/img/projects/megastore.png" alt="Card image" style="width:100%" id="project-image">
+          <div class="card-body">
             <br>
-            <h4>E-commerce web-app marketplace for users to buy and/or sell products</h4>
-            <br>
-            <p>Tools: Ruby on Rails, SQLite, HTML, CSS, Bcrypt</p>
+            <h4 class="card-title">MegaStore</h4>
+            <h5 class="card-text">E-commerce web-app marketplace for users to buy and/or sell products</h5>
+            <p class="card-text">Tools: Ruby on Rails, SQLite, HTML, CSS, Bcrypt</p>
             <a href="https://github.com/jonathanwong110/MegaStore" target="_blank" class="button">
               GitHub
             </a>
@@ -342,24 +317,13 @@
           </div>
         </div>
 
-        <br></br>
-
-        <hr class="solid">
-
-        <br></br>
-
-        <div class="individual-project">
-          <div class="card">
-            <img src="portfolio/img/projects/uniqloshopper.jpg" alt="uniqloshopper" style="width:100%" class="project-image">
-            <div class="container">
-            </div>
-          </div>
-          <div class="project-info">
-            <h3>UniqloShopper</h3>
+        <div class="card" style="width:300px">
+          <img class="card-img-top" src="portfolio/img/projects/uniqloshopper.jpg" alt="Card image" style="width:100%" id="project-image">
+          <div class="card-body">
             <br>
-            <h4>CLI App to help Uniqlo Shoppers make smarter purchases</h4>
-            <br>
-            <p>Tools: Ruby, Nokogiri</p>
+            <h4 class="card-title">UniqloShopper</h4>
+            <h5 class="card-text">CLI App to help Uniqlo Shoppers make smarter purchases</h5>
+            <p class="card-text">Tools: Ruby, Nokogiri</p>
             <a href="https://github.com/jonathanwong110/UniqloShopper" target="_blank" class="button">
               GitHub
             </a>
@@ -448,7 +412,7 @@
 
   <div class="topnav">
     <p></p>
-    <p>&copy; Copyright Jonathan Wong 2021</p>
+    <p>&copy; Copyright Jonathan Wong 2020</p>
     <p></p>
   </div>
 
