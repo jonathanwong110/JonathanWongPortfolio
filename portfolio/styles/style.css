@@ -70,16 +70,25 @@
   color: rgb(159, 162, 165);
 }
 
-#about, #skills, #contact {
-  margin-right: 30px;
+#about, #skills, #stats, #portfolio, #contact {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.about-heading {
+  margin-right: 3%;
+  margin-left: 3%;
 }
 
 .about-text {
   font-size: 18px;
+  margin-right: 3%;
+  margin-left: 3%;
 }
 
 .all-individual-skills {
-  margin-left: 5%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .individual-skill {
@@ -93,10 +102,13 @@
   text-align: center;
 }
 
+.all-individual-media {
+  margin: 10px;
+}
+
 .individual-media {
   display: inline-block;
   padding: 10px;
-
   position: relative;
 }
 
@@ -185,6 +197,7 @@
   font-size: 16px;
   margin: 10px;
   transition: 0.3s;
+  font-size: 18px;
   font-weight: bold;
   border-radius: 8px;
 }
@@ -330,7 +343,7 @@ input:checked + .slider:before {
   width: 40%;
   margin-top: 5%;
   margin-right:3%;
-  margin-left: 3.75%;
+  margin-left: 3%;
   float: left;
   height: auto;
 }
