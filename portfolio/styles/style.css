@@ -81,25 +81,51 @@
 }
 
 .about-text {
-  font-size: 18px;
+  font-size: 20px;
   margin-right: 3%;
   margin-left: 3%;
 }
 
-.all-individual-skills {
-  margin-left: auto;
-  margin-right: auto;
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(7, 1fr);
 }
 
-.individual-skill {
-  display: inline-block;
-  padding: 30px;
-  height: 175px;
-  width: 175px;
-}
-
-.individual-skill-heading {
+.grid-item {
+  padding: 5px 5px;
   text-align: center;
+  margin: 10px;
+}
+
+@media(min-width: 500px){
+  .grid-container {
+     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 500px){
+  .grid-container {
+     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(min-width: 770px){
+  .grid-container {
+     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media(min-width: 1000px){
+  .grid-container {
+     grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media(min-width: 1200px){
+  .grid-container {
+     grid-template-columns: repeat(7, 1fr);
+  }
 }
 
 .all-individual-media {
