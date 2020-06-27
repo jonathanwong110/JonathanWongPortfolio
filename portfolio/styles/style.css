@@ -1,3 +1,17 @@
+body {
+  overflow-x: hidden !important;
+}
+
+.backgroundSlides {
+  display: none;
+  z-index: -10;
+}
+
+.image-text-heading-2 {
+  font-family: Verdana, sans-serif; 
+  margin: 0;
+}
+
 .image-text-heading-1 {
   position: absolute;
   top: 35%;
@@ -12,7 +26,7 @@
 
 .image-text-heading-2 {
   position: absolute;
-  top: 60%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -255,7 +269,7 @@ hr.solid {
 .individual-stat-category {
   color: #237fad;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .all-projects {
@@ -308,7 +322,7 @@ hr.solid {
 
 .project-button {
   display: inline-block;
-  background-color: #336c8d;
+  background-color: #237fad;
   border: none;
   color: black;
   padding: 10px 20px;
@@ -369,7 +383,7 @@ hr.solid {
 
 .individual-media .individual-media-text {
   visibility: hidden;
-  width: 120px;
+  width: 130px;
   background-color: rgb(44, 43, 43);
   color: #fff;
   text-align: center;
@@ -377,7 +391,7 @@ hr.solid {
   padding: 5px 0;
   position: absolute;
   z-index: 1;
-  bottom: 150%;
+  bottom: 125%;
   left: 50%;
   margin-left: -60px;
 }
@@ -397,8 +411,8 @@ hr.solid {
   visibility: visible
 }
 
-img {
-  border-radius: 5px 5px 5px 5px;
+.media-img {
+  border-radius: 10px 10px 10px 10px;
 }
 
 .topnav {

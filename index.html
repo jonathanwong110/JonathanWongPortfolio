@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta prefix="og: http://ogp.me/ns#" property="og:title" content="Portfolio" />
-  <meta prefix="og: http://ogp.me/ns#" property="og:image" content="portfolio/img/background/background.jpg" />
+  <meta prefix="og: http://ogp.me/ns#" property="og:image" content="portfolio/img/background/background-1.jpg" />
   <title>Jonathan Wong</title>
 
   <link rel="stylesheet" href="portfolio/styles/style.css">
@@ -14,7 +14,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-
 </head>
 
 <body>
@@ -50,13 +49,16 @@
       </ul>
     </div>
   </nav>
+  <br></br>
 
-  <div class="background-image">
-    <img src="portfolio/img/background/background.jpg" alt="background" width="100%" height="1000">
+  <div>
+    <img src="portfolio/img/background/background-1.jpg" class="backgroundSlides" alt="background" width="100%" height="auto">
+    <img src="portfolio/img/background/background-2.jpg" class="backgroundSlides" alt="background" width="100%" height="auto">
   </div>
 
   <h1 class="image-text-heading-1">JONATHAN WONG</h1>
-  <h2 class="image-text-heading-2">SOFTWARE ENGINEER</h2>
+  <h2 class="image-text-heading-2">Software Engineer</h2>
+  <h2 class="image-text-heading-2">Web Developer</h2>
   <br></br>
 
   <div id="about" class="section">
@@ -370,14 +372,14 @@
 
           <div class="individual-media">
             <a href="https://www.linkedin.com/in/wongjonathan1/" target="_blank">
-              <img src="portfolio/img/icons/linkedin.png" alt="linkedin" width="50" height="50">
+              <img src="portfolio/img/icons/linkedin.png" class="media-img" alt="linkedin" width="50" height="50">
               <p class="individual-media-text">LinkedIn</p>
             </a>
           </div>
 
           <div class="individual-media">
             <a href="https://github.com/jonathanwong110" target="_blank">
-              <img src="portfolio/img/icons/github.png" alt="github" width="50" height="50">
+              <img src="portfolio/img/icons/github.png" class="media-img" alt="github" width="50" height="50">
               <p class="individual-media-text">GitHub</p>
             </a>
           </div>
@@ -385,13 +387,13 @@
           <div class="individual-media">
             <a href="https://medium.com/@jonathan_wong/" target="_blank">
               <img src="portfolio/img/icons/medium.png" alt="medium" width="50" height="55">
-              <p class="individual-media-text">Medium (Blog)</p>
+              <p class="individual-media-text">Blog (Medium)</p>
             </a>
           </div>
 
           <div class="individual-media">
             <a href="https://twitter.com/jonwcodes/" target="_blank">
-              <img src="portfolio/img/icons/twitter.png" alt="twitter" width="50" height="50">
+              <img src="portfolio/img/icons/twitter.png" class="media-img" alt="twitter" width="50" height="50">
               <p class="individual-media-text">Twitter</p>
             </a>
           </div>
@@ -428,6 +430,8 @@
   </div>
 
   <script src="portfolio/js/dark-mode.js"></script>
+  <script src="portfolio/js/background-slideshow.js"></script>
+  <script src="portfolio/js/text-slideshow.js"></script>
 
 </body>
 
