@@ -10,5 +10,5 @@ function backgroundCarousel() {
   myIndex++;
   if (myIndex > x.length) {myIndex = 1}    
   x[myIndex-1].style.display = "block";  
-  setTimeout(backgroundCarousel, 3000);
+  setTimeout(backgroundCarousel, 2000);
 }

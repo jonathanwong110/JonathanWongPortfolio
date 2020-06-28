@@ -10,5 +10,5 @@ function textCarousel() {
   myIndex++;
   if (myIndex > x.length) {myIndex = 1}    
   x[myIndex-1].style.display = "block";  
-  setTimeout(textCarousel, 2000);
+  setTimeout(textCarousel, 1700);
 }
