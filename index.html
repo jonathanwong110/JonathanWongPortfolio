@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta prefix="og: http://ogp.me/ns#" property="og:title" content="Portfolio" />
   <meta prefix="og: http://ogp.me/ns#" property="og:image" content="portfolio/img/background/background-1.jpg" />
@@ -17,8 +17,10 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
-    <a class="navbar-brand" href="#">Welcome</a>
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top" id="navbar">
+    <div class="navbar-brand-holder">
+      <a class="navbar-brand" href="#">Home</a>
+    </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -268,85 +270,85 @@
     <div class="separator">
       <h1 class="category-heading">PORTFOLIO</h1>
     </div>
-    
+
     <br></br>
 
     <div class="container">
 
-        <div class="all-projects">
+      <div class="all-projects">
 
-          <div class="card" style="width:300px">
-            <img class="card-img-top" src="portfolio/img/projects/bookstore.png" alt="Card image" style="width:100%"
-              id="project-image">
-            <div class="card-body">
-              <h4 class="card-title">BookStore</h4>
-              <h5 class="card-text">E-commerce web-app for users to purchase books </h5>
-              <p class="card-text">Tools: React, Redux, Ruby on Rails API, Thunk, react-router, Bootstrap, HTML, CSS</p>
-              <div class="row justify-content-center">
-                <a href="https://github.com/jonathanwong110/bookstore" target="_blank" class="project-button">GitHub</a>
-                <a href="https://youtu.be/VQfR3-5u-Bc" target="_blank" class="project-button">
-                  Demo
-                </a>
-              </div>
+        <div class="card" style="width:300px">
+          <img class="card-img-top" src="portfolio/img/projects/bookstore.png" alt="Card image" style="width:100%"
+            id="project-image">
+          <div class="card-body">
+            <h4 class="card-title">BookStore</h4>
+            <h5 class="card-text">E-commerce web-app for users to purchase books </h5>
+            <p class="card-text">Tools: React, Redux, Ruby on Rails API, Thunk, react-router, Bootstrap, HTML, CSS</p>
+            <div class="row justify-content-center">
+              <a href="https://github.com/jonathanwong110/bookstore" target="_blank" class="project-button">GitHub</a>
+              <a href="https://youtu.be/VQfR3-5u-Bc" target="_blank" class="project-button">
+                Demo
+              </a>
             </div>
           </div>
-
-          <div class="card" style="width:300px">
-            <img class="card-img-top" src="portfolio/img/projects/purchasetracker.png" alt="Card image"
-              style="width:100%" id="project-image">
-            <div class="card-body">
-              <h4 class="card-title">PurchaseTracker</h4>
-              <h5 class="card-text">A web app to record and keep track of your purchases </h5>
-              <p class="card-text">Tools: JavaScript, Ruby on Rails API, HTML, CSS, active_model_serializers</p>
-              <div class="row justify-content-center">
-                <a href="https://github.com/jonathanwong110/purchase-tracker" target="_blank" class="project-button">
-                  GitHub
-                </a>
-                <a href="https://youtu.be/bLfhwHwnuWg" target="_blank" class="project-button">
-                  Demo
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="card" style="width:300px">
-            <img class="card-img-top" src="portfolio/img/projects/megastore.png" alt="Card image" style="width:100%"
-              id="project-image">
-            <div class="card-body">
-              <h4 class="card-title">MegaStore</h4>
-              <h5 class="card-text">E-commerce web-app marketplace for users to buy and/or sell products</h5>
-              <p class="card-text">Tools: Ruby on Rails, SQLite, HTML, CSS, Bcrypt</p>
-              <div class="row justify-content-center">
-                <a href="https://github.com/jonathanwong110/MegaStore" target="_blank" class="project-button">
-                  GitHub
-                </a>
-                <a href="https://youtu.be/8s7nHHMMnOA" target="_blank" class="project-button">
-                  Demo
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="card" style="width:300px">
-            <img class="card-img-top" src="portfolio/img/projects/uniqloshopper.jpg" alt="Card image" style="width:100%"
-              id="project-image">
-            <div class="card-body">
-              <h4 class="card-title">UniqloShopper</h4>
-              <h5 class="card-text">CLI App to help Uniqlo Shoppers make smarter purchases</h5>
-              <p class="card-text">Tools: Ruby, Nokogiri</p>
-              <br>
-              <div class="row justify-content-center">
-                <a href="https://github.com/jonathanwong110/UniqloShopper" target="_blank" class="project-button">
-                  GitHub
-                </a>
-                <a href="https://youtu.be/wdJUMk8hT0Q" target="_blank" class="project-button">
-                  Demo
-                </a>
-              </div>
-            </div>
-          </div>
-
         </div>
+
+        <div class="card" style="width:300px">
+          <img class="card-img-top" src="portfolio/img/projects/purchasetracker.png" alt="Card image" style="width:100%"
+            id="project-image">
+          <div class="card-body">
+            <h4 class="card-title">PurchaseTracker</h4>
+            <h5 class="card-text">A web app to record and keep track of your purchases </h5>
+            <p class="card-text">Tools: JavaScript, Ruby on Rails API, HTML, CSS, active_model_serializers</p>
+            <div class="row justify-content-center">
+              <a href="https://github.com/jonathanwong110/purchase-tracker" target="_blank" class="project-button">
+                GitHub
+              </a>
+              <a href="https://youtu.be/bLfhwHwnuWg" target="_blank" class="project-button">
+                Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="width:300px">
+          <img class="card-img-top" src="portfolio/img/projects/megastore.png" alt="Card image" style="width:100%"
+            id="project-image">
+          <div class="card-body">
+            <h4 class="card-title">MegaStore</h4>
+            <h5 class="card-text">E-commerce web-app marketplace for users to buy and/or sell products</h5>
+            <p class="card-text">Tools: Ruby on Rails, SQLite, HTML, CSS, Bcrypt</p>
+            <div class="row justify-content-center">
+              <a href="https://github.com/jonathanwong110/MegaStore" target="_blank" class="project-button">
+                GitHub
+              </a>
+              <a href="https://youtu.be/8s7nHHMMnOA" target="_blank" class="project-button">
+                Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="width:300px">
+          <img class="card-img-top" src="portfolio/img/projects/uniqloshopper.jpg" alt="Card image" style="width:100%"
+            id="project-image">
+          <div class="card-body">
+            <h4 class="card-title">UniqloShopper</h4>
+            <h5 class="card-text">CLI App to help Uniqlo Shoppers make smarter purchases</h5>
+            <p class="card-text">Tools: Ruby, Nokogiri</p>
+            <br>
+            <div class="row justify-content-center">
+              <a href="https://github.com/jonathanwong110/UniqloShopper" target="_blank" class="project-button">
+                GitHub
+              </a>
+              <a href="https://youtu.be/wdJUMk8hT0Q" target="_blank" class="project-button">
+                Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
 
     </div>
 
@@ -386,7 +388,7 @@
 
           <div class="individual-media">
             <a href="https://medium.com/@jonathan_wong/" target="_blank">
-              <img src="portfolio/img/icons/medium.png" alt="medium" width="50" height="55">
+              <img src="portfolio/img/icons/medium.png" class="media-img" alt="medium" width="50" height="50">
               <p class="individual-media-text">Blog (Medium)</p>
             </a>
           </div>
