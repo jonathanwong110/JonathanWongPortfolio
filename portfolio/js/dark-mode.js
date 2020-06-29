@@ -17,6 +17,7 @@ function switchTheme(e) {
         document.documentElement.setAttribute('data-theme', 'dark');
         localStorage.setItem('theme', 'dark');
         element.classList.toggle("dark-mode")
+        debugger
     }
     else {
         document.documentElement.setAttribute('data-theme', 'light');

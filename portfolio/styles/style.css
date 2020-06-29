@@ -318,19 +318,31 @@ hr.solid {
   margin: 10px;
 }
 
+@media(min-width: 320px){
+  .grid-container {
+     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media(max-width: 320px){
+  .grid-container {
+     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media(min-width: 360px){
+  .grid-container {
+     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media(min-width: 500px){
   .grid-container {
      grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media(max-width: 500px){
-  .grid-container {
-     grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media(min-width: 550px){
+@media(min-width: 525px){
   .grid-container {
      grid-template-columns: repeat(3, 1fr);
   }
@@ -375,6 +387,19 @@ hr.solid {
   color: #237fad;
   font-weight: bold;
   font-size: 22px;
+  letter-spacing: .03em;
+}
+
+@media (min-width: 200px) {
+  .individual-stat {
+    margin: 15px
+  }
+}
+
+@media (min-width: 460px) {
+  .individual-stat {
+    margin: auto;
+  }
 }
 
 .all-projects {
