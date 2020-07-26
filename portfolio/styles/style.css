@@ -309,6 +309,10 @@ hr.solid {
   margin-left: 3%;
 }
 
+.about-link:hover {
+  text-decoration: none;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
