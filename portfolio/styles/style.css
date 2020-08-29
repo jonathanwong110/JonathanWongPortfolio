@@ -137,8 +137,8 @@ html, body {
 
 #navbar {
   max-width: 100% !important;
-  background: #2c3e50 !important; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2c3e50, #4ca1af)!important; /* Chrome 10-25, Safari 5.1-6 */
+  background: #2c3e50 !important;
+  background: -webkit-linear-gradient(to right, #2c3e50, #4ca1af) !important;
   background: linear-gradient(to right, #2c3e50, #4ca1af) !important;
 }
 
