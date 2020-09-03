@@ -295,28 +295,6 @@ input:checked + .slider:before {
   margin: 40px;
 }
 
-.separator {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  font-size: 30px;
-}
-
-.separator::before, .separator::after {
-  content: '';
-  flex: 1;
-  border-bottom: 3px solid #bbb;
-}
-
-.separator::before {
-  margin-right: .25em;
-}
-
-.separator::after {
-  margin-left: .25em;
-}
-
-
 #about, #skills, #stats, #portfolio, #contact {
   margin-right: auto;
   margin-left: auto;
@@ -324,6 +302,8 @@ input:checked + .slider:before {
 
 #skills, #portfolio {
   background-color: #f0f0f0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 .about-heading {
