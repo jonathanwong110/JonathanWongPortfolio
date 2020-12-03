@@ -1,7 +1,8 @@
 body {
   overflow-x: hidden;
-  /* background-color: #001a4d !important;
-  color: #8892B0; */
+  background-color: #00061a !important;
+  color: #778899 !important;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Background Image */
@@ -83,10 +84,10 @@ body {
 /* All Categories */
 
 .category-heading {
-  text-align: center;
   font-weight: 500;
   letter-spacing: 2px;
-  margin: 40px;
+  text-align: center;
+  color: #66FF66;
 }
 
 #about, #skills, #portfolio, #contact {
@@ -97,14 +98,22 @@ body {
 
 /* About */
 
-#about {
-  background-color: #f0f0f0;
+.rounded {
+  border-top: 2px solid #b3b3b3 !important;
+  text-align: center;
+  width: 100px;
 }
 
 .about-text {
-  font-size: 18px;
-  margin-right: 3%;
-  margin-left: 3%;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+@media(max-width: 575px) {
+  .about-text {
+    margin-left: 7%;
+    margin-right: 7%;
+  }
 }
 
 /* Technical Skills */
@@ -176,9 +185,9 @@ body {
 
 /* Portfolio */
 
-#portfolio {
+/* #portfolio {
   background-color: #f0f0f0;
-}
+} */
 
 .grid-container-projects {
   text-align: center;
@@ -284,13 +293,14 @@ body {
 }
 
 .project-modal-image {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #bbb;
 }
 
 .project-modal-information {
   margin-left: 20px;
   margin-right: 20px;
   font-size: 25px;
+  color: black;
 }
 
 .project-media-button {
@@ -303,6 +313,12 @@ body {
   white-space: nowrap;
   color: white;
   margin-right: 15px;
+}
+
+@media(max-width: 389px) {
+  .project-media-button {
+    padding: 10px 10px;
+  }
 }
 
 .project-media-button:hover {
