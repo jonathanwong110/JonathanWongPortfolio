@@ -10,15 +10,20 @@
   <meta name="author" content="Jonathan Wong">
   <title>Jonathan Wong</title>
 
+  <!-- LOCAL -->
   <link rel="icon" href="portfolio/img/icons/logo.PNG">
   <link rel="stylesheet" href="portfolio/styles/style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+  <!-- HOSTED -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
+
   <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top" id="navbar">
     <div class="navbar-brand-holder">
       <a class="navbar-brand" href="#">Welcome</a>
@@ -35,9 +40,6 @@
           <a class="nav-link" href="#skills">Skills</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#stats">Stats</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link" href="#portfolio">Portfolio</a>
         </li>
         <li class="nav-item">
@@ -46,22 +48,20 @@
       </ul>
     </div>
   </nav>
-  
-  <br></br>
 
   <div>
-    <img src="portfolio/img/background/background-1.jpg" class="backgroundSlides" alt="background">
-    <img src="portfolio/img/background/background-2.jpg" class="backgroundSlides" alt="background">
-    <h1 class="image-text-heading-1">JONATHAN WONG</h1>
-    <h2 class="image-text-heading-2">SOFTWARE ENGINEER</h2>
-    <!-- <h2 class="image-text-heading-2">WEB DEVELOPER</h2> -->
+    <img src="portfolio/img/background/background.png" alt="background" class="background-slide">
+    <h1 class="background-text">
+      <p id="highlighted-name">Jonathan Wong</p>
+      <p>I'm a full stack software engineer</p>
+    </h1>
   </div>
 
   <div id="about" class="section">
 
     <br></br>
-    <br></br>
-    <br></br>
+
+    <h1 class="category-heading">ABOUT</h1>
 
     <div class="container">
 
@@ -96,7 +96,6 @@
 
     <br></br>
     <br></br>
-    <br></br>
 
   </div>
 
@@ -110,95 +109,74 @@
 
       <br></br>
 
-      <div class="grid-container">
+      <div class="grid-container-skills">
 
-        <div class="grid-item">
+        <div class="skill-item">
           <img src="portfolio/img/icons/javascript.png" alt="JavaScript" width="100" height="100">
-          <p class="grid-item-heading">
+          <p class="skill-item-heading">
             JavaScript
           </p>
         </div>
 
-        <div class="grid-item">
+        <div class="skill-item">
           <img src="portfolio/img/icons/ruby.png" alt="Ruby" width="100" height="100">
-          <p class="grid-item-heading">
+          <p class="skill-item-heading">
             Ruby
           </p>
         </div>
 
-        <div class="grid-item">
+        <div class="skill-item">
           <img src="portfolio/img/icons/react.png" alt="React" width="100" height="100">
-          <p class="grid-item-heading">
+          <p class="skill-item-heading">
             React
           </p>
         </div>
 
-        <div class="grid-item">
+        <div class="skill-item">
           <img src="portfolio/img/icons/redux.png" alt="Redux" width="100" height="100">
-          <p class="grid-item-heading">
+          <p class="skill-item-heading">
             Redux
           </p>
         </div>
 
-        <div class="grid-item">
+        <div class="skill-item">
           <img src="portfolio/img/icons/rails.png" alt="Rails" width="100" height="100">
-          <p class="grid-item-heading">
+          <p class="skill-item-heading">
             Rails
           </p>
         </div>
 
-        <div class="grid-item">
+        <div class="skill-item">
           <img src="portfolio/img/icons/html.png" alt="HTML5" width="100" height="100">
-          <p class="grid-item-heading">
+          <p class="skill-item-heading">
             HTML
           </p>
         </div>
 
-        <div class="grid-item">
+        <div class="skill-item">
           <img src="portfolio/img/icons/css.png" alt="CSS3" width="100" height="100">
-          <p class="grid-item-heading">
+          <p class="skill-item-heading">
             CSS
           </p>
         </div>
 
-        <div class="grid-item">
+        <div class="skill-item">
           <img src="portfolio/img/icons/sql.png" alt="SQL" width="100" height="100">
-          <p class="grid-item-heading">
+          <p class="skill-item-heading">
             SQL
           </p>
         </div>
 
-        <!-- <div class="grid-item">
-          <img src="portfolio/img/icons/postgresql.png" alt="PostgreSQL" width="100" height="100">
-          <p class="grid-item-heading">
-            PostgreSQL
-          </p>
-        </div>
-
-        <div class="grid-item">
-          <img src="portfolio/img/icons/sqlite.png" alt="SQLite" width="100" height="100">
-          <p class="grid-item-heading">
-            SQLite
-          </p>
-        </div>
-
-        <div class="grid-item">
-          <img src="portfolio/img/icons/mysql.png" alt="MySQL" width="100" height="100">
-          <p class="grid-item-heading">
-            MySQL
-          </p>
-        </div> -->
-
-        <div class="grid-item">
+        <div class="skill-item">
           <img src="portfolio/img/icons/git.png" alt="Git" width="100" height="100">
-          <p class="grid-item-heading">
+          <p class="skill-item-heading">
             Git
           </p>
         </div>
 
-        <div class="grid-item">
+        <div class="skill-item">
           <img src="portfolio/img/icons/bootstrap.png" alt="Bootstrap" width="100" height="100">
-          <p class="grid-item-heading">
+          <p class="skill-item-heading">
             Bootstrap
           </p>
         </div>
@@ -207,42 +185,6 @@
 
     </div>
 
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-
-  </div>
-
-  <div id="stats" class="section">
-
-    <br></br>
-
-    <h1 class="category-heading">STATS</h1>
-
-    <div class="container">
-
-      <br></br>
-
-      <div class="row justify-content-center">
-
-        <div class="individual-stat">
-          <p class="individual-stat-number">1,793</p>
-          <br>
-          <h4 class="individual-stat-category">Git Commits</h4>
-        </div>
-
-        <div class="individual-stat">
-          <p class="individual-stat-number">388</p>
-          <br>
-          <h4 class="individual-stat-category">Repositories</h4>
-        </div>
-
-      </div>
-
-    </div>
-
-    <br></br>
     <br></br>
     <br></br>
     <br></br>
@@ -257,112 +199,217 @@
 
     <br></br>
 
+
     <div class="container">
 
-      <div class="all-projects">
+      <div class="grid-container-projects">
 
-        <div class="card" style="width:300px">
-          <img class="card-img-top" src="portfolio/img/projects/gidi.PNG" alt="Card image" style="width:100%" id="project-image">
-          <div class="card-body">
-            <h4 class="card-title">GIDI</h4>
-            <h5 class="card-text">A bug tracker/task management solution app</h5>
-            <p class="card-text">Tools: React, Redux, JWT, Ruby on Rails API, Active Model Serializers</p>
-            <br>
-            <div class="row justify-content-center">
-              <a href="https://github.com/jonathanwong110/Git-It-And-Did-It" target="_blank" class="project-button">
-                GitHub
-              </a>
-              <!-- <a href="https://youtu.be/bLfhwHwnuWg" target="_blank" class="project-button">
-                Demo
-              </a> -->
+        <div class="grid-item-project">
+
+          <img class="project-image" src="portfolio/img/projects/gidi.PNG" alt="portfolio image">
+
+          <div class="project-container">
+            <div class="project-title">Git It And Did It</div>
+            <div class="project-technology">React / Ruby</div>
+          </div>
+
+          <button type="button" class="learn-more-button" data-toggle="modal" data-target=".bd-first-modal-lg">
+            LEARN MORE
+          </button>
+
+          <div class="modal fade bd-first-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="project-modal-image" src="portfolio/img/projects/gidi.PNG" alt="portfolio image">
+                <br></br>
+                <div class="project-modal-information">
+                  A bug tracker where you and other users can assign and manage tasks amongst yourselves
+                  <br></br>
+                  <p>Built using a RESTful Ruby on Rails API and React </p>
+                  <a href="https://github.com/jonathanwong110/Git-It-And-Did-It" target="_blank" class="project-media-button">
+                    <i class="fa fa-link"></i>GitHub
+                  </a>
+                  <br></br>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="grid-item-project">
+
+          <img class="project-image" src="portfolio/img/projects/bookstore.png" alt="portfolio image">
+
+          <div class="project-container">
+            <div class="project-title">BookStore</div>
+            <div class="project-technology">React / Ruby</div>
+          </div>
+
+          <button type="button" class="learn-more-button" data-toggle="modal" data-target=".bd-second-modal-lg">
+            LEARN MORE
+          </button>
+
+          <div class="modal fade bd-second-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="project-modal-image" src="portfolio/img/projects/bookstore.png" alt="portfolio image">
+                <br></br>
+                <div class="project-modal-information">
+                  An app created to resemble a website dedicated to selling books
+                  <br></br>
+                  <p>An application built with a Ruby on Rails API, React, and Redux</p>
+                  <a href="https://github.com/jonathanwong110/bookstore" target="_blank" class="project-media-button">
+                    <i class="fa fa-link"></i>GitHub
+                  </a>
+                  <a href="https://youtu.be/HLUKP9ci3GQ" target="_blank" class="project-media-button">
+                    <i class="fa fa-link"></i>Demo
+                  </a>
+                  <br></br>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="card" style="width:300px">
-          <img class="card-img-top" src="portfolio/img/projects/bookstore.png" alt="Card image" style="width:100%"
-            id="project-image">
-          <div class="card-body">
-            <h4 class="card-title">BookStore</h4>
-            <h5 class="card-text">E-commerce app for users to purchase books </h5>
-            <p class="card-text">Tools: React, Redux, Ruby on Rails API </p>
-            <br>
-            <div class="row justify-content-center">
-              <a href="https://github.com/jonathanwong110/bookstore" target="_blank" class="project-button">GitHub</a>
-              <a href="https://youtu.be/HLUKP9ci3GQ" target="_blank" class="project-button">
-                Demo
-              </a>
+        <div class="grid-item-project">
+
+          <img class="project-image" src="portfolio/img/projects/megastore.png" alt="portfolio image">
+
+          <div class="project-container">
+            <div class="project-title">MegaStore</div>
+            <div class="project-technology">Ruby</div>
+          </div>
+
+          <button type="button" class="learn-more-button" data-toggle="modal" data-target=".bd-third-modal-lg">
+            LEARN MORE
+          </button>
+
+          <div class="modal fade bd-third-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="project-modal-image" src="portfolio/img/projects/megastore.png" alt="portfolio image">
+                <br></br>
+                <div class="project-modal-information">
+                  Online marketplace that facilitates consumer-to-consumer sales
+                  <br></br>
+                  <p>An application built with a Ruby on Rails</p>
+                  <a href="https://github.com/jonathanwong110/megastore" target="_blank" class="project-media-button">
+                    <i class="fa fa-link"></i>GitHub
+                  </a>
+                  <a href="https://youtu.be/mMR4z6N8xDA" target="_blank" class="project-media-button">
+                    <i class="fa fa-link"></i>Demo
+                  </a>
+                  <br></br>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="grid-item-project">
+          <img class="project-image" src="portfolio/img/projects/gititdone.PNG" alt="portfolio image">
+
+          <div class="project-container">
+            <div class="project-title">Git It Done</div>
+            <div class="project-technology">JavaScript / HTML / CSS</div>
+          </div>
+
+          <button type="button" class="learn-more-button" data-toggle="modal" data-target=".bd-fourth-modal-lg">
+            LEARN MORE
+          </button>
+
+          <div class="modal fade bd-fourth-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="project-modal-image" src="portfolio/img/projects/gititdone.PNG" alt="portfolio image">
+                <br></br>
+                <div class="project-modal-information">
+                  Vanilla JavaScript To Do List
+                  <br></br>
+                  <p>An application built with JavaScript, HTML, CSS, and LocalStorage</p>
+                  <a href="https://github.com/jonathanwong110/Git-It-Done" target="_blank" class="project-media-button">
+                    <i class="fa fa-link"></i>GitHub
+                  </a>
+                  <a href="https://youtu.be/z-xz7gc7pkg" target="_blank" class="project-media-button">
+                    <i class="fa fa-link"></i>Demo
+                  </a>
+                  <br></br>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+        <div class="grid-item-project">
+          <img class="project-image" src="portfolio/img/projects/weatherapp.PNG" alt="portfolio image">
 
-        <div class="card" style="width:300px">
-          <img class="card-img-top" src="portfolio/img/projects/megastore.png" alt="Card image" style="width:100%"
-            id="project-image">
-          <div class="card-body">
-            <h4 class="card-title">MegaStore</h4>
-            <h5 class="card-text">An online marketplace, facilitating consumer-to-consumer sales</h5>
-            <p class="card-text">Tools: Ruby on Rails, SQLite, HTML, CSS, Bcrypt</p>
-            <div class="row justify-content-center">
-              <a href="https://github.com/jonathanwong110/MegaStore" target="_blank" class="project-button">
-                GitHub
-              </a>
-              <a href="https://youtu.be/mMR4z6N8xDA" target="_blank" class="project-button">
-                Demo
-              </a>
+          <div class="project-container">
+            <div class="project-title">Weather App</div>
+            <div class="project-technology">JavaScript / HTML / CSS</div>
+          </div>
+
+          <button type="button" class="learn-more-button" data-toggle="modal" data-target=".bd-fifth-modal-lg">
+            LEARN MORE
+          </button>
+
+          <div class="modal fade bd-fifth-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="project-modal-image" src="portfolio/img/projects/weatherapp.PNG" alt="portfolio image">
+                <br></br>
+                <div class="project-modal-information">
+                  Weather App that searches for the weather in city
+                  <br></br>
+                  <p>An application built with JavaScript, HTML, CSS</p>
+                  <a href="https://github.com/jonathanwong110/weather-app" target="_blank" class="project-media-button">
+                    <i class="fa fa-link"></i>GitHub
+                  </a>
+                  <a href="https://youtu.be/jIFKPwtlOuo" target="_blank" class="project-media-button">
+                    <i class="fa fa-link"></i>Demo
+                  </a>
+                  <br></br>
+                </div>
+              </div>
             </div>
           </div>
+
         </div>
 
-        <div class="card" style="width:300px">
-          <img class="card-img-top" src="portfolio/img/projects/gititdone.PNG" alt="Card image" style="width:100%"
-            id="project-image">
-          <div class="card-body">
-            <h4 class="card-title">Git It Done</h4>
-            <h5 class="card-text">To Do List</h5>
-            <p class="card-text">Tools: JavaScript, localStorage, HTML, CSS</p>
-            <br></br>
-            <div class="row justify-content-center">
-              <a href="https://github.com/jonathanwong110/Git-It-Done" target="_blank" class="project-button">GitHub</a>
-              <a href="https://youtu.be/z-xz7gc7pkg" target="_blank" class="project-button">
-                Demo
-              </a>
-            </div>
+        <div class="grid-item-project">
+          <img class="project-image" src="portfolio/img/projects/uniqloshopper.jpg" alt="portfolio image">
+          <div class="project-container">
+            <div class="project-title">UniqloShopper</div>
+            <div class="project-technology">Ruby</div>
           </div>
-        </div>
 
-        <div class="card" style="width:300px">
-          <img class="card-img-top" src="portfolio/img/projects/weatherapp.PNG" alt="Card image" style="width:100%"
-            id="project-image">
-          <div class="card-body">
-            <h4 class="card-title">Weather-App</h4>
-            <h5 class="card-text">Get the current weather at any location </h5>
-            <p class="card-text">Tools: JavaScript, OpenWeather API, HTML, CSS</p>
-            <br>
-            <div class="row justify-content-center">
-              <a href="https://github.com/jonathanwong110/weather-app" target="_blank" class="project-button">GitHub</a>
-              <a href="https://youtu.be/jIFKPwtlOuo" target="_blank" class="project-button">
-                Demo
-              </a>
-            </div>
-          </div>
-        </div>
+          <button type="button" class="learn-more-button" data-toggle="modal" data-target=".bd-sixth-modal-lg">
+            LEARN MORE
+          </button>
 
-        <div class="card" style="width:300px">
-          <img class="card-img-top" src="portfolio/img/projects/uniqloshopper.jpg" alt="Card image" style="width:100%"
-            id="project-image">
-          <div class="card-body">
-            <h4 class="card-title">UniqloShopper</h4>
-            <h5 class="card-text">CLI App to help Uniqlo Shoppers make smarter purchases</h5>
-            <p class="card-text">Tools: Ruby, Nokogiri</p>
-            <br>
-            <div class="row justify-content-center">
-              <a href="https://github.com/jonathanwong110/UniqloShopper" target="_blank" class="project-button">
-                GitHub
-              </a>
-              <a href="https://youtu.be/wdJUMk8hT0Q" target="_blank" class="project-button">
-                Demo
-              </a>
+          <div class="modal fade bd-sixth-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="project-modal-image" src="portfolio/img/projects/uniqloshopper.jpg" alt="portfolio image">
+                <br></br>
+                <div class="project-modal-information">
+                  A Command Line Interface application built with Ruby. Uses Nokogiri to scrape data from Uniqlo,
+                  allowing users to see the prices of Men's T-shirts
+                  <br></br>
+                  <p>An application built OOP Ruby and the Nokogiri gem</p>
+                  <a href="https://github.com/jonathanwong110/UniqloShopper" target="_blank" class="project-media-button">
+                    <i class="fa fa-link"></i>GitHub
+                  </a>
+                  <a href="https://youtu.be/wdJUMk8hT0Q" target="_blank" class="project-media-button">
+                    <i class="fa fa-link"></i>Demo
+                  </a>
+                  <br></br>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -450,9 +497,6 @@
     <p id="bottomnav-text">&copy; Copyright Jonathan Wong 2020</p>
     <p></p>
   </div>
-
-  <script src="portfolio/js/background-slideshow.js"></script>
-  <!-- <script src="portfolio/js/text-slideshow.js"></script> -->
 
 </body>
 
