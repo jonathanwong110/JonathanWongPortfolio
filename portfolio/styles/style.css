@@ -253,8 +253,8 @@ body {
   transition: .5s ease;
   opacity: 0;
   position: relative;
-  bottom: 70%;
-  left: 50%;
+  bottom: 200px;
+  left: 150px;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
@@ -286,7 +286,7 @@ body {
 .learn-more-button {
   visibility: hidden;
   position: relative;
-  bottom: 70%;
+  bottom: 150px;
   background-color: white;
   border-color: var(--button);
   padding: 10px 24px;
