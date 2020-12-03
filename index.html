@@ -54,10 +54,13 @@
   <!-- Background Image -->
 
   <div>
-    <img src="portfolio/img/background/background.png" alt="background" class="background-slide">
+    <img src="portfolio/img/background/background.png" alt="background" class="background-image">
     <h1 class="background-text">
-      <p id="highlighted-name">Jonathan Wong</p>
-      <p>I'm a full stack software engineer</p>
+      <p>Hi, I'm<span id="highlighted-name"> Jonathan Wong</span>.</p>
+      <p>I'm a full stack software engineer.</p>
+      <a href="#about" class="introduction-button">
+        View my work<i class="fa fa-arrow-down"></i>
+      </a>
     </h1>
   </div>
 
@@ -224,7 +227,7 @@
 
         <div class="grid-item-project">
 
-          <img class="project-image" src="portfolio/img/projects/gidi.PNG" alt="portfolio image">
+          <img class="project-image" src="portfolio/img/projects/thumbnails/thumbnail-gidi.PNG" alt="portfolio image">
 
           <div class="project-container">
             <div class="project-title">Git It And Did It</div>
@@ -239,7 +242,7 @@
             aria-hidden="true">
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
-                <img class="project-modal-image" src="portfolio/img/projects/gidi.PNG" alt="portfolio image">
+                <img class="project-modal-image" src="portfolio/img/projects/fullpictures/fullpicture-gidi.PNG" alt="portfolio image">
                 <br></br>
                 <div class="project-modal-information">
                   A bug tracker where you and other users can assign and manage tasks amongst yourselves
@@ -256,9 +259,10 @@
           </div>
 
         </div>
+
         <div class="grid-item-project">
 
-          <img class="project-image" src="portfolio/img/projects/bookstore.png" alt="portfolio image">
+          <img class="project-image" src="portfolio/img/projects/thumbnails/thumbnail-bookstore.png" alt="portfolio image">
 
           <div class="project-container">
             <div class="project-title">BookStore</div>
@@ -273,7 +277,7 @@
             aria-hidden="true">
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
-                <img class="project-modal-image" src="portfolio/img/projects/bookstore.png" alt="portfolio image">
+                <img class="project-modal-image" src="portfolio/img/projects/fullpictures/fullpicture-bookstore.png" alt="portfolio image">
                 <br></br>
                 <div class="project-modal-information">
                   An app created to resemble a website dedicated to selling books
@@ -290,11 +294,12 @@
               </div>
             </div>
           </div>
+
         </div>
 
         <div class="grid-item-project">
 
-          <img class="project-image" src="portfolio/img/projects/megastore.png" alt="portfolio image">
+          <img class="project-image" src="portfolio/img/projects/thumbnails/thumbnail-megastore.png" alt="portfolio image">
 
           <div class="project-container">
             <div class="project-title">MegaStore</div>
@@ -309,7 +314,7 @@
             aria-hidden="true">
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
-                <img class="project-modal-image" src="portfolio/img/projects/megastore.png" alt="portfolio image">
+                <img class="project-modal-image" src="portfolio/img/projects/fullpictures/fullpicture-megastore.png" alt="portfolio image">
                 <br></br>
                 <div class="project-modal-information">
                   Online marketplace that facilitates consumer-to-consumer sales
@@ -328,12 +333,13 @@
           </div>
 
         </div>
+
         <div class="grid-item-project">
-          <img class="project-image" src="portfolio/img/projects/gititdone.PNG" alt="portfolio image">
+          <img class="project-image" src="portfolio/img/projects/thumbnails/thumbnail-kanban-board.png" alt="portfolio image">
 
           <div class="project-container">
-            <div class="project-title">Git It Done</div>
-            <div class="project-technology">JavaScript / HTML / CSS</div>
+            <div class="project-title">kanban Board</div>
+            <div class="project-technology" style="position: relative; right: 25px">JavaScript / HTML / CSS</div>
           </div>
 
           <button type="button" class="learn-more-button" data-toggle="modal" data-target=".bd-fourth-modal-lg">
@@ -344,7 +350,40 @@
             aria-hidden="true">
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
-                <img class="project-modal-image" src="portfolio/img/projects/gititdone.PNG" alt="portfolio image">
+                <img class="project-modal-image" src="portfolio/img/projects/fullpictures/fullpicture-kanban-board.png" alt="portfolio image">
+                <br></br>
+                <div class="project-modal-information">
+                  JavaScript application that assists users in project planning. Users can create, delete, drag, and drop tasks.
+                  <br></br>
+                  <p>An application built with JavaScript, HTML, CSS, and LocalStorage</p>
+                  <a href="https://github.com/jonathanwong110/kanban-board" target="_blank" class="project-media-button">
+                    <i class="fa fa-external-link"></i>GitHub
+                  </a>
+                  <br></br>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="grid-item-project">
+          <img class="project-image" src="portfolio/img/projects/thumbnails/thumbnail-gititdone.PNG" alt="portfolio image">
+
+          <div class="project-container">
+            <div class="project-title">Git It Done</div>
+            <div class="project-technology" style="position: relative; right: 25px">JavaScript / HTML / CSS</div>
+          </div>
+
+          <button type="button" class="learn-more-button" data-toggle="modal" data-target=".bd-fifth-modal-lg">
+            LEARN MORE
+          </button>
+
+          <div class="modal fade bd-fifth-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="project-modal-image" src="portfolio/img/projects/fullpictures/fullpicture-gititdone.PNG" alt="portfolio image">
                 <br></br>
                 <div class="project-modal-information">
                   Vanilla JavaScript To Do List
@@ -361,24 +400,26 @@
               </div>
             </div>
           </div>
+
         </div>
+
         <div class="grid-item-project">
-          <img class="project-image" src="portfolio/img/projects/weatherapp.PNG" alt="portfolio image">
+          <img class="project-image" src="portfolio/img/projects/thumbnails/thumbnail-weatherapp.PNG" alt="portfolio image">
 
           <div class="project-container">
             <div class="project-title">Weather App</div>
-            <div class="project-technology">JavaScript / HTML / CSS</div>
+            <div class="project-technology" style="position: relative; right: 25px">JavaScript / HTML / CSS</div>
           </div>
 
-          <button type="button" class="learn-more-button" data-toggle="modal" data-target=".bd-fifth-modal-lg">
+          <button type="button" class="learn-more-button" data-toggle="modal" data-target=".bd-sixth-modal-lg">
             LEARN MORE
           </button>
 
-          <div class="modal fade bd-fifth-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+          <div class="modal fade bd-sixth-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
             aria-hidden="true">
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
-                <img class="project-modal-image" src="portfolio/img/projects/weatherapp.PNG" alt="portfolio image">
+                <img class="project-modal-image" src="portfolio/img/projects/fullpictures/fullpicture-weatherapp.PNG" alt="portfolio image">
                 <br></br>
                 <div class="project-modal-information">
                   Weather App that searches for the weather in city
@@ -399,21 +440,21 @@
         </div>
 
         <div class="grid-item-project">
-          <img class="project-image" src="portfolio/img/projects/uniqloshopper.jpg" alt="portfolio image">
+          <img class="project-image" src="portfolio/img/projects/thumbnails/thumbnail-uniqloshopper.jpg" alt="portfolio image">
           <div class="project-container">
             <div class="project-title">UniqloShopper</div>
             <div class="project-technology">Ruby</div>
           </div>
 
-          <button type="button" class="learn-more-button" data-toggle="modal" data-target=".bd-sixth-modal-lg">
+          <button type="button" class="learn-more-button" data-toggle="modal" data-target=".bd-seventh-modal-lg">
             LEARN MORE
           </button>
 
-          <div class="modal fade bd-sixth-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+          <div class="modal fade bd-seventh-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
             aria-hidden="true">
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
-                <img class="project-modal-image" src="portfolio/img/projects/uniqloshopper.jpg" alt="portfolio image">
+                <img class="project-modal-image" src="portfolio/img/projects/fullpictures/fullpicture-uniqloshopper.jpg" alt="portfolio image">
                 <br></br>
                 <div class="project-modal-information">
                   A Command Line Interface application built with Ruby. Uses Nokogiri to scrape data from Uniqlo,
@@ -430,8 +471,10 @@
                   <br></br>
                 </div>
               </div>
+
             </div>
           </div>
+
         </div>
 
       </div>
@@ -471,7 +514,8 @@
 
           <div class="individual-media">
             <a href="https://github.com/jonathanwong110" target="_blank">
-              <img src="portfolio/img/icons/github.png" class="media-img" alt="github" width="50" height="50">
+              <img src="portfolio/img/icons/github.png" class="media-img" alt="github" width="50" height="50"
+                style="border: 1px solid white">
               <p class="individual-media-text">GitHub</p>
             </a>
           </div>
