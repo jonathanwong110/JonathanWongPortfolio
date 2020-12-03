@@ -286,7 +286,7 @@ body {
 .learn-more-button {
   visibility: hidden;
   position: relative;
-  bottom: 50%;
+  bottom: 70%;
   background-color: white;
   border-color: var(--button);
   padding: 10px 24px;
