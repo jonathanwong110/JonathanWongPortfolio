@@ -307,6 +307,19 @@ body {
   opacity: 1;
 }
 
+@media(max-width: 575px) {
+  .modal-content {
+    width: 90% !important;
+    margin: 5% 5% 5% 5%;
+  }
+  .project-modal-image {
+    max-width: 100%;
+  }
+  .modal-content div, .modal-content div p {
+    font-size: 20px;
+  }
+}
+
 .project-modal-image {
   border-bottom: 2px solid #bbb;
 }
