@@ -4,14 +4,14 @@ html {
 
 body {
   overflow-x: hidden;
-  background-color: #00061a !important;
+  background-color: #020c1b !important;
   color: #778899 !important;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 :root {
-  --lime: #66FF66;
-  --teal: #04c2c9;
+  --light-cyan: #64FFDA;
+  --light-teal: #04c2c9;
   --navy: #00061a;
 }
 
@@ -25,7 +25,7 @@ body {
 /* Text on Background Image */
 
 #highlighted-name {
-  color: var(--lime);
+  color: var(--light-cyan);
 }
 
 .background-text {
@@ -59,9 +59,9 @@ body {
 }
 
 .introduction-button:hover {
-  border: 2px solid var(--teal);
+  border: 2px solid var(--light-teal);
   color: white;
-  background-color: var(--teal);
+  background-color: var(--light-teal);
   text-decoration: none;
 }
 
@@ -106,7 +106,7 @@ body {
   font-weight: 500;
   letter-spacing: 2px;
   text-align: center;
-  color: var(--lime);
+  color: var(--light-cyan);
 }
 
 #about, #skills, #portfolio, #contact {
@@ -217,7 +217,7 @@ body {
   width: 150px;
   background-color: var(--navy);
   cursor: pointer;
-  border: 1px solid var(--lime);
+  border: 1px solid var(--light-cyan);
   color: white;
   opacity: 0.6;
   font-size: 17px;
@@ -247,11 +247,12 @@ body {
 }
 
 .project-filter-btn:hover {
-  background-color: var(--lime);
+  background-color: var(--light-cyan);
 }
 
 .project-filter-btn.active {
-  background-color: var(--lime);
+  background-color: var(--light-cyan);
+  color: black;
   opacity: 1;
 }
 
@@ -327,7 +328,7 @@ body {
 .project-technology {
   font-weight: 500;
   font-size: 18px;
-  color: var(--teal);
+  color: var(--light-teal);
   white-space: nowrap;
   text-align: center;
 }
@@ -345,7 +346,7 @@ body {
   position: relative;
   bottom: 150px;
   background-color: white;
-  border-color: var(--teal);
+  border-color: var(--light-teal);
   padding: 10px 24px;
   letter-spacing: 2px;
   font-weight: 500;
@@ -359,7 +360,7 @@ body {
 }
 
 .learn-more-button:hover {
-  background-color: var(--teal);
+  background-color: var(--light-teal);
   color: white;
 }
 
@@ -393,8 +394,8 @@ body {
 }
 
 .project-media-button {
-  background-color: var(--teal);
-  border: 2px solid var(--teal);
+  background-color: var(--light-teal);
+  border: 2px solid var(--light-teal);
   padding: 10px 24px;
   letter-spacing: 2px;
   font-weight: 500;
@@ -408,17 +409,29 @@ body {
   outline: none;
 }
 
-@media(max-width: 389px) {
+@media(min-width: 100px) and (max-width: 320px) {
   .project-media-button {
-    padding: 10px 10px;
+    padding: 3px;
+  }
+}
+
+@media(min-width: 321px) and (max-width: 358px) {
+  .project-media-button {
+    padding: 5px;
+  }
+}
+
+@media(min-width: 359px) and (max-width: 438px) {
+  .project-media-button {
+    padding: 10px;
   }
 }
 
 .project-media-button:hover {
   background-color: white;
   text-decoration: none;
-  border: 2px solid var(--teal);
-  color: var(--teal);
+  border: 2px solid var(--light-teal);
+  color: var(--light-teal);
 }
 
 /* Contact */
@@ -470,7 +483,7 @@ body {
 /* Copyright */
 
 #topButton {
-  background-color: var(--lime);
+  background-color: var(--light-cyan);
   width: 50px;
   height: 50px;
   text-align: center; 
