@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
   background-color: #00061a !important;
@@ -6,8 +10,9 @@ body {
 }
 
 :root {
-  --heading: #66FF66;
-  --button: #04c2c9;
+  --lime: #66FF66;
+  --teal: #04c2c9;
+  --navy: #00061a;
 }
 
 /* Background Image */
@@ -20,7 +25,7 @@ body {
 /* Text on Background Image */
 
 #highlighted-name {
-  color: var(--heading);
+  color: var(--lime);
 }
 
 .background-text {
@@ -54,9 +59,9 @@ body {
 }
 
 .introduction-button:hover {
-  border: 2px solid var(--button);
+  border: 2px solid var(--teal);
   color: white;
-  background-color: var(--button);
+  background-color: var(--teal);
   text-decoration: none;
 }
 
@@ -101,7 +106,7 @@ body {
   font-weight: 500;
   letter-spacing: 2px;
   text-align: center;
-  color: var(--heading);
+  color: var(--lime);
 }
 
 #about, #skills, #portfolio, #contact {
@@ -134,7 +139,6 @@ body {
 
 .grid-container-skills {
   display: grid;
-  grid-template-columns: auto auto auto;
   grid-template-columns: repeat(7, 1fr);
 }
 
@@ -199,13 +203,61 @@ body {
 
 /* Portfolio */
 
-/* #portfolio {
-  background-color: #f0f0f0;
-} */
+#myBtnContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.project-filter-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  height: 50px;
+  width: 150px;
+  background-color: var(--navy);
+  cursor: pointer;
+  border: 1px solid var(--lime);
+  color: white;
+  opacity: 0.6;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.project-filter-btn:focus {
+  outline: none;
+}
+
+@media (max-width: 400px) {
+  #myBtnContainer {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .project-filter-btn {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  #myBtnContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .project-filter-btn {
+    margin-bottom: 25px;
+  }
+}
+
+.project-filter-btn:hover {
+  background-color: var(--lime);
+}
+
+.project-filter-btn.active {
+  background-color: var(--lime);
+  opacity: 1;
+}
 
 .grid-container-projects {
-  text-align: center;
   display: grid;
+  text-align: center;
   grid-gap: 20px 20px;
   grid-template-columns: (3, 1fr);
 }
@@ -238,6 +290,11 @@ body {
   min-width: 150px;
   height: 250px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  display: none;
+}
+
+.show {
+  display: block;
 }
 
 .project-image {
@@ -270,7 +327,7 @@ body {
 .project-technology {
   font-weight: 500;
   font-size: 18px;
-  color: var(--button);
+  color: var(--teal);
   white-space: nowrap;
   text-align: center;
 }
@@ -288,7 +345,7 @@ body {
   position: relative;
   bottom: 150px;
   background-color: white;
-  border-color: var(--button);
+  border-color: var(--teal);
   padding: 10px 24px;
   letter-spacing: 2px;
   font-weight: 500;
@@ -297,8 +354,12 @@ body {
   color: black;
 }
 
+.learn-more-button:focus {
+  outline: none;
+}
+
 .learn-more-button:hover {
-  background-color: var(--button);
+  background-color: var(--teal);
   color: white;
 }
 
@@ -332,8 +393,8 @@ body {
 }
 
 .project-media-button {
-  background-color: var(--button);
-  border: 2px solid var(--button);
+  background-color: var(--teal);
+  border: 2px solid var(--teal);
   padding: 10px 24px;
   letter-spacing: 2px;
   font-weight: 500;
@@ -341,6 +402,10 @@ body {
   white-space: nowrap;
   color: white;
   margin-right: 15px;
+}
+
+.project-media-button:focus {
+  outline: none;
 }
 
 @media(max-width: 389px) {
@@ -352,8 +417,8 @@ body {
 .project-media-button:hover {
   background-color: white;
   text-decoration: none;
-  border: 2px solid var(--button);
-  color: var(--button);
+  border: 2px solid var(--teal);
+  color: var(--teal);
 }
 
 /* Contact */
@@ -403,6 +468,19 @@ body {
 }
 
 /* Copyright */
+
+#topButton {
+  background-color: var(--lime);
+  width: 50px;
+  height: 50px;
+  text-align: center; 
+  display: block; 
+  margin: 0 auto
+}
+
+#topButton:hover {
+  text-decoration: none;
+}
 
 .bottomnav {
   overflow: hidden;

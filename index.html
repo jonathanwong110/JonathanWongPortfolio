@@ -54,12 +54,12 @@
   <!-- Background Image -->
 
   <div>
-    <img src="portfolio/img/background/background.png" alt="background" class="background-image">
+    <img src="https://wallpapercave.com/wp/wp4546350.jpg" alt="background" class="background-image">
     <h1 class="background-text">
       <p>Hi, I'm<span id="highlighted-name"> Jonathan Wong</span>.</p>
       <p>I'm a full stack software engineer.</p>
       <a href="#about" class="introduction-button">
-        View my work<i class="fa fa-arrow-down"></i>
+        View my work<i class="fa fa-arrow-down" style="margin-left: 7px"></i>
       </a>
     </h1>
   </div>
@@ -223,9 +223,18 @@
 
     <div class="container">
 
+      <div id="myBtnContainer">
+        <button class="project-filter-btn active" onclick="filterSelection('all')"> ALL </button>
+        <button class="project-filter-btn" onclick="filterSelection('ruby')"> RUBY/RAILS </button>
+        <button class="project-filter-btn" onclick="filterSelection('react')"> REACT-JS </button>
+        <button class="project-filter-btn" onclick="filterSelection('javascript')"> JAVASCRIPT</button>
+      </div>
+
+      <br></br>
+
       <div class="grid-container-projects">
 
-        <div class="grid-item-project">
+        <div class="grid-item-project react ruby">
 
           <img class="project-image" src="portfolio/img/projects/thumbnails/thumbnail-gidi.PNG" alt="portfolio image">
 
@@ -242,7 +251,8 @@
             aria-hidden="true">
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
-                <img class="project-modal-image" src="portfolio/img/projects/fullpictures/fullpicture-gidi.PNG" alt="portfolio image">
+                <img class="project-modal-image" src="portfolio/img/projects/fullpictures/fullpicture-gidi.PNG"
+                  alt="portfolio image">
                 <br></br>
                 <div class="project-modal-information">
                   A bug tracker where you and other users can assign and manage tasks amongst yourselves
@@ -263,9 +273,10 @@
 
         </div>
 
-        <div class="grid-item-project">
+        <div class="grid-item-project react ruby">
 
-          <img class="project-image" src="portfolio/img/projects/thumbnails/thumbnail-bookstore.PNG" alt="portfolio image">
+          <img class="project-image" src="portfolio/img/projects/thumbnails/thumbnail-bookstore.PNG"
+            alt="portfolio image">
 
           <div class="project-container">
             <div class="project-title">BookStore</div>
@@ -280,7 +291,8 @@
             aria-hidden="true">
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
-                <img class="project-modal-image" src="portfolio/img/projects/fullpictures/fullpicture-bookstore.PNG" alt="portfolio image">
+                <img class="project-modal-image" src="portfolio/img/projects/fullpictures/fullpicture-bookstore.PNG"
+                  alt="portfolio image">
                 <br></br>
                 <div class="project-modal-information">
                   An app created to resemble a website dedicated to selling books
@@ -303,9 +315,10 @@
 
         </div>
 
-        <div class="grid-item-project">
+        <div class="grid-item-project ruby">
 
-          <img class="project-image" src="portfolio/img/projects/thumbnails/thumbnail-megastore.PNG" alt="portfolio image">
+          <img class="project-image" src="portfolio/img/projects/thumbnails/thumbnail-megastore.PNG"
+            alt="portfolio image">
 
           <div class="project-container">
             <div class="project-title">MegaStore</div>
@@ -320,7 +333,8 @@
             aria-hidden="true">
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
-                <img class="project-modal-image" src="portfolio/img/projects/fullpictures/fullpicture-megastore.PNG" alt="portfolio image">
+                <img class="project-modal-image" src="portfolio/img/projects/fullpictures/fullpicture-megastore.PNG"
+                  alt="portfolio image">
                 <br></br>
                 <div class="project-modal-information">
                   Online marketplace that facilitates consumer-to-consumer sales
@@ -343,8 +357,10 @@
 
         </div>
 
-        <div class="grid-item-project">
-          <img class="project-image" src="portfolio/img/projects/thumbnails/thumbnail-kanban-board.PNG" alt="portfolio image">
+        <div class="grid-item-project javascript">
+
+          <img class="project-image" src="portfolio/img/projects/thumbnails/thumbnail-kanban-board.PNG"
+            alt="portfolio image">
 
           <div class="project-container">
             <div class="project-title">Kanban Board</div>
@@ -359,13 +375,16 @@
             aria-hidden="true">
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
-                <img class="project-modal-image" src="portfolio/img/projects/fullpictures/fullpicture-kanban-board.PNG" alt="portfolio image">
+                <img class="project-modal-image" src="portfolio/img/projects/fullpictures/fullpicture-kanban-board.PNG"
+                  alt="portfolio image">
                 <br></br>
                 <div class="project-modal-information">
-                  JavaScript application that assists users in project planning. Users can create, delete, drag, and drop tasks.
+                  JavaScript application that assists users in project planning. Users can create, delete, drag, and
+                  drop tasks.
                   <br></br>
                   <p>An application built with JavaScript, HTML, CSS, and LocalStorage</p>
-                  <a href="https://github.com/jonathanwong110/kanban-board" target="_blank" class="project-media-button">
+                  <a href="https://github.com/jonathanwong110/kanban-board" target="_blank"
+                    class="project-media-button">
                     <i class="fa fa-external-link" style="padding-right: 7px"></i>GitHub
                   </a>
                   <br></br>
@@ -379,8 +398,10 @@
 
         </div>
 
-        <div class="grid-item-project">
-          <img class="project-image" src="portfolio/img/projects/thumbnails/thumbnail-gititdone.PNG" alt="portfolio image">
+        <div class="grid-item-project javascript">
+
+          <img class="project-image" src="portfolio/img/projects/thumbnails/thumbnail-gititdone.PNG"
+            alt="portfolio image">
 
           <div class="project-container">
             <div class="project-title">Git It Done</div>
@@ -395,7 +416,8 @@
             aria-hidden="true">
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
-                <img class="project-modal-image" src="portfolio/img/projects/fullpictures/fullpicture-gititdone.PNG" alt="portfolio image">
+                <img class="project-modal-image" src="portfolio/img/projects/fullpictures/fullpicture-gititdone.PNG"
+                  alt="portfolio image">
                 <br></br>
                 <div class="project-modal-information">
                   Vanilla JavaScript To Do List
@@ -418,8 +440,9 @@
 
         </div>
 
-        <div class="grid-item-project">
-          <img class="project-image" src="portfolio/img/projects/thumbnails/thumbnail-weatherapp.PNG" alt="portfolio image">
+        <div class="grid-item-project javascript">
+          <img class="project-image" src="portfolio/img/projects/thumbnails/thumbnail-weatherapp.PNG"
+            alt="portfolio image">
 
           <div class="project-container">
             <div class="project-title">Weather App</div>
@@ -434,7 +457,8 @@
             aria-hidden="true">
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
-                <img class="project-modal-image" src="portfolio/img/projects/fullpictures/fullpicture-weatherapp.PNG" alt="portfolio image">
+                <img class="project-modal-image" src="portfolio/img/projects/fullpictures/fullpicture-weatherapp.PNG"
+                  alt="portfolio image">
                 <br></br>
                 <div class="project-modal-information">
                   Weather App that searches for the weather in city
@@ -457,8 +481,10 @@
 
         </div>
 
-        <div class="grid-item-project">
-          <img class="project-image" src="portfolio/img/projects/thumbnails/thumbnail-uniqloshopper.jpg" alt="portfolio image">
+        <div class="grid-item-project ruby">
+
+          <img class="project-image" src="portfolio/img/projects/thumbnails/thumbnail-uniqloshopper.jpg"
+            alt="portfolio image">
           <div class="project-container">
             <div class="project-title">UniqloShopper</div>
             <div class="project-technology">Ruby</div>
@@ -472,7 +498,8 @@
             aria-hidden="true">
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
-                <img class="project-modal-image" src="portfolio/img/projects/fullpictures/fullpicture-uniqloshopper.jpg" alt="portfolio image">
+                <img class="project-modal-image" src="portfolio/img/projects/fullpictures/fullpicture-uniqloshopper.jpg"
+                  alt="portfolio image">
                 <br></br>
                 <div class="project-modal-information">
                   A Command Line Interface application built with Ruby. Uses Nokogiri to scrape data from Uniqlo,
@@ -582,11 +609,15 @@
 
   <!-- Copyright Section -->
 
+  <a href="#" id="topButton"><i class='fa fa-angle-double-up' style="font-size: 30px; margin-top: 10px; color: white"></i></a>
+
   <div class="bottomnav">
     <p></p>
     <p id="bottomnav-text">&copy; Copyright Jonathan Wong 2020</p>
     <p></p>
   </div>
+
+  <script src="portfolio/js/projects.js"></script>
 
 </body>
 
