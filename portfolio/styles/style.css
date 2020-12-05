@@ -74,8 +74,8 @@ body {
 
 .navbar-logo {
   position: absolute;
-  top: 21px;
-  left: 27px;
+  top: 20px;
+  left: 30px;
   font-size: 20px;
 }
 
@@ -88,7 +88,8 @@ body {
 }
 
 .nav-link {
-  font-size: 18px;
+  font-size: 17px;
+  font-weight: 500;
   color: #64FFDA !important;
   margin-left: 5px;
 }
@@ -312,7 +313,7 @@ body {
   opacity: 0;
   position: relative;
   bottom: 200px;
-  left: 150px;
+  left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
@@ -348,11 +349,11 @@ body {
   background-color: white;
   border-color: var(--light-teal);
   padding: 10px 24px;
-  letter-spacing: 2px;
+  /* letter-spacing: 1px; */
   font-weight: 500;
-  font-size: 18px;
+  font-size: 17px;
   white-space: nowrap;
-  color: black;
+  color: var(--navy);
 }
 
 .learn-more-button:focus {
