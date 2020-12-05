@@ -37,7 +37,6 @@ body {
   font-size: 40px;
   font-weight: 500;
   text-align: center;
-  letter-spacing: 0.1em;
   white-space: nowrap;
   color: #CCD6F6;
 }
@@ -115,6 +114,13 @@ body {
   margin-left: auto;
 }
 
+@media(max-width: 1300px) {
+  #about, #skills, #portfolio, #contact {
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+}
+
 
 /* About */
 
@@ -127,13 +133,6 @@ body {
 .about-text {
   font-size: 20px;
   font-weight: 400;
-}
-
-@media(max-width: 575px) {
-  .about-text {
-    margin-left: 7%;
-    margin-right: 7%;
-  }
 }
 
 /* Technical Skills */
@@ -151,7 +150,7 @@ body {
 
 .skill-item-heading {
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 @media(min-width: 320px){
@@ -229,7 +228,7 @@ body {
   outline: none;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 449px) {
   #myBtnContainer {
     grid-template-columns: repeat(1, 1fr) !important;
   }
@@ -249,11 +248,12 @@ body {
 
 .project-filter-btn:hover {
   background-color: var(--light-cyan);
+  color: #020c1b;
 }
 
 .project-filter-btn.active {
   background-color: var(--light-cyan);
-  color: black;
+  color: #020c1b;
   opacity: 1;
 }
 
@@ -433,6 +433,10 @@ body {
   text-decoration: none;
   border: 2px solid var(--light-teal);
   color: var(--light-teal);
+}
+
+.project-media-button-icon {
+  padding-right: 8px;
 }
 
 /* Contact */
