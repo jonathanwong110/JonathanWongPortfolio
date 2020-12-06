@@ -272,23 +272,23 @@ body {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  grid-column-gap: 5px;
-  grid-row-gap: 10px;
+  grid-gap: 10px;
   grid-template-columns: (3, 1fr);
   max-width: 930px;
 }
 
-@media (min-width: 200px) {
+@media (min-width: 200px) and (max-width: 849px) {
   .grid-container-projects {
     grid-template-columns: repeat(1, 1fr);
   }
   .grid-item-project {
-    margin: auto auto auto auto;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 300px;
   }
 }
 
-@media (min-width: 767px) and (max-width: 1099px) {
+@media (min-width: 850px) and (max-width: 1099px) {
  .grid-container-projects {
     max-width: 623px;
     grid-template-columns: repeat(2, 1fr);
