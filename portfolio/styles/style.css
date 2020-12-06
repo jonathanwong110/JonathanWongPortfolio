@@ -280,6 +280,7 @@ body {
 @media (min-width: 200px) and (max-width: 849px) {
   .grid-container-projects {
     grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
   }
   .grid-item-project {
     margin-left: auto;
