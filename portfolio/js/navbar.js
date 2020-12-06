@@ -8,3 +8,7 @@ var currentScrollPos = window.pageYOffset;
   }
   prevScrollpos = currentScrollPos;
 }
+
+$('.nav-link').on('click',function() {
+  $('.navbar-collapse').collapse('hide');
+});
