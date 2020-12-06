@@ -33,12 +33,12 @@
         <div class="navbar-logo">J</div>
       </i>
     </a>
-  
+
     <!-- Toggler/collapsibe Button -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <i class="fa fa-navicon" style="color:#64FFDA; font-size:28px;"></i>
     </button>
-  
+
     <!-- Navbar links -->
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav">
@@ -231,8 +231,8 @@
 
       <div id="myBtnContainer">
         <button class="project-filter-btn active" onclick="filterSelection('all')"> ALL </button>
-        <button class="project-filter-btn" onclick="filterSelection('ruby')"> RUBY/RAILS </button>
         <button class="project-filter-btn" onclick="filterSelection('react')"> REACT-JS </button>
+        <button class="project-filter-btn" onclick="filterSelection('ruby')"> RUBY/RAILS </button>
         <button class="project-filter-btn" onclick="filterSelection('javascript')"> JAVASCRIPT</button>
       </div>
 
@@ -246,7 +246,7 @@
 
           <div class="project-container">
             <div class="project-title">Git It And Did It</div>
-            <div class="project-technology">React / Ruby</div>
+            <div class="project-technology">React / Ruby on Rails</div>
           </div>
 
           <button type="button" class="learn-more-button" data-toggle="modal" data-target=".bd-first-modal-lg">
@@ -286,7 +286,7 @@
 
           <div class="project-container">
             <div class="project-title">BookStore</div>
-            <div class="project-technology">React / Ruby</div>
+            <div class="project-technology">React / Ruby on Rails</div>
           </div>
 
           <button type="button" class="learn-more-button" data-toggle="modal" data-target=".bd-second-modal-lg">
@@ -328,7 +328,7 @@
 
           <div class="project-container">
             <div class="project-title">MegaStore</div>
-            <div class="project-technology">Ruby</div>
+            <div class="project-technology">Ruby on Rails</div>
           </div>
 
           <button type="button" class="learn-more-button" data-toggle="modal" data-target=".bd-third-modal-lg">
@@ -370,7 +370,7 @@
 
           <div class="project-container">
             <div class="project-title">Kanban Board</div>
-            <div class="project-technology" style="position: relative; right: 25px">JavaScript / HTML / CSS</div>
+            <div class="project-technology" style="position: relative; right: 25px">JavaScript</div>
           </div>
 
           <button type="button" class="learn-more-button" data-toggle="modal" data-target=".bd-fourth-modal-lg">
@@ -411,7 +411,7 @@
 
           <div class="project-container">
             <div class="project-title">Git It Done</div>
-            <div class="project-technology" style="position: relative; right: 25px">JavaScript / HTML / CSS</div>
+            <div class="project-technology" style="position: relative; right: 25px">JavaScript</div>
           </div>
 
           <button type="button" class="learn-more-button" data-toggle="modal" data-target=".bd-fifth-modal-lg">
@@ -452,7 +452,7 @@
 
           <div class="project-container">
             <div class="project-title">Weather App</div>
-            <div class="project-technology" style="position: relative; right: 25px">JavaScript / HTML / CSS</div>
+            <div class="project-technology" style="position: relative; right: 25px">JavaScript</div>
           </div>
 
           <button type="button" class="learn-more-button" data-toggle="modal" data-target=".bd-sixth-modal-lg">
@@ -551,6 +551,13 @@
     <h1 class="category-heading">GET IN TOUCH</h1>
     <hr class="rounded">
 
+    <div class="contact-text-container">
+      <p class="contact-text">
+        I am currently looking for new opportunities. Whether you have an opportunity, a question, or just want to say
+        hi, my inbox is always open and I'll get back to you.
+      </p>
+    </div>
+
     <div class="container">
 
       <br></br>
@@ -561,29 +568,30 @@
 
           <div class="individual-media">
             <a href="https://www.linkedin.com/in/wongjonathan1/" target="_blank">
-              <img src="portfolio/img/icons/linkedin.png" class="media-img" alt="linkedin" width="50" height="50">
+              <img src="portfolio/img/icons/linkedin.png" alt="LinkedIn" width="50" height="50">
               <p class="individual-media-text">LinkedIn</p>
             </a>
           </div>
 
           <div class="individual-media">
             <a href="https://github.com/jonathanwong110" target="_blank">
-              <img src="portfolio/img/icons/github.png" class="media-img" alt="github" width="50" height="50"
-                style="border: 1px solid white">
+              <img src="portfolio/img/icons/github.png" alt="GitHub" width="50" height="50"
+                style="border: 1px solid white; border-radius: 5px 5px; position: relative; bottom: -2px;">
               <p class="individual-media-text">GitHub</p>
             </a>
           </div>
 
           <div class="individual-media">
             <a href="https://medium.com/@jonathan_wong/" target="_blank">
-              <img src="portfolio/img/icons/medium.png" alt="medium" width="50" height="50">
+              <img src="portfolio/img/icons/medium.png" alt="Medium" width="50" height="50">
               <p class="individual-media-text">Blog (Medium)</p>
             </a>
           </div>
 
           <div class="individual-media">
             <a href="https://twitter.com/jonwcodes/" target="_blank">
-              <img src="portfolio/img/icons/twitter.png" class="media-img" alt="twitter" width="50" height="50">
+              <img src="portfolio/img/icons/twitter.png" alt="Twitter" width="50" height="50"
+                style="border-radius: 5px 5px;">
               <p class="individual-media-text">Twitter</p>
             </a>
           </div>
@@ -615,8 +623,8 @@
 
   <!-- Copyright Section -->
 
-  <a href="#" id="topButton">
-    <i class='fa fa-angle-double-up' style="font-size: 30px; margin-top: 10px; color: black"></i>
+  <a href="#" id="scroll-to-top-btn">
+    <i class='fa fa-angle-double-up scroll-to-top-icon'></i>
   </a>
 
   <div class="bottomnav">
@@ -625,8 +633,8 @@
     <p></p>
   </div>
 
-  <script src="portfolio/js/projects.js"></script>
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <script src="portfolio/js/projects.js"></script>
 
 </body>
 

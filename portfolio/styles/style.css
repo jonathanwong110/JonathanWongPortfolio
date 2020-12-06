@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -12,7 +13,42 @@ body {
 :root {
   --light-cyan: #64FFDA;
   --light-teal: #04c2c9;
+  --light-gray: #8892B0;
   --navy: #00061a;
+}
+
+/* Navbar */
+
+#navbar {
+  background: #020c1b !important;
+  opacity: 0.85;
+}
+
+.navbar-logo {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  font-size: 20px;
+}
+
+.navbar-toggler-icon {
+  color: #64FFDA !important;
+}
+
+.navbar-brand, .nav-link {
+  color: var(--light-gray) !important;
+}
+
+.nav-link {
+  font-size: 17px;
+  color: #64FFDA !important;
+  margin-left: 5px;
+}
+
+@media (max-width: 767px) {
+  .nav-link {
+    margin-left: 0;
+  }
 }
 
 /* Background Image */
@@ -65,46 +101,10 @@ body {
   text-decoration: none;
 }
 
-/* Navbar */
-
-#navbar {
-  background: #020c1b !important;
-  opacity: 0.85;
-}
-
-.navbar-logo {
-  position: absolute;
-  top: 20px;
-  left: 30px;
-  font-size: 20px;
-}
-
-.navbar-toggler-icon {
-  color: #64FFDA !important;
-}
-
-.navbar-brand, .nav-link {
-  color: #8892B0 !important;
-}
-
-.nav-link {
-  font-size: 17px;
-  font-weight: 500;
-  color: #64FFDA !important;
-  margin-left: 5px;
-}
-
-@media (max-width: 767px) {
-  .nav-link {
-    margin-left: 0;
-  }
-}
 
 /* All Categories */
 
 .category-heading {
-  font-weight: 500;
-  letter-spacing: 2px;
   text-align: center;
   color: var(--light-cyan);
 }
@@ -132,7 +132,6 @@ body {
 
 .about-text {
   font-size: 20px;
-  font-weight: 400;
 }
 
 /* Technical Skills */
@@ -206,6 +205,15 @@ body {
 #myBtnContainer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1035px;
+}
+
+@media (max-width: 1100px) {
+  #myBtnContainer {
+    max-width: 630px;
+  }
 }
 
 .project-filter-btn {
@@ -230,19 +238,21 @@ body {
 
 @media (max-width: 449px) {
   #myBtnContainer {
-    grid-template-columns: repeat(1, 1fr) !important;
+    grid-template-columns: repeat(1, 1fr);
   }
   .project-filter-btn {
     margin-bottom: 25px;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 450px) and (max-width: 850px) {
   #myBtnContainer {
     grid-template-columns: repeat(2, 1fr);
+    max-width: 337px;
   }
   .project-filter-btn {
-    margin-bottom: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
 
@@ -260,14 +270,17 @@ body {
 .grid-container-projects {
   display: grid;
   text-align: center;
-  grid-gap: 20px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  grid-column-gap: 5px;
+  grid-row-gap: 10px;
   grid-template-columns: (3, 1fr);
+  max-width: 930px;
 }
 
 @media (min-width: 200px) {
   .grid-container-projects {
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 40px 40px;
   }
   .grid-item-project {
     margin: auto auto auto auto;
@@ -275,14 +288,14 @@ body {
   }
 }
 
-@media (min-width: 767px) {
+@media (min-width: 767px) and (max-width: 1099px) {
  .grid-container-projects {
+    max-width: 623px;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px 20px;
   }
 }
 
-@media (min-width: 991px) {
+@media (min-width: 1100px) {
   .grid-container-projects {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -440,6 +453,17 @@ body {
 
 /* Contact */
 
+.contact-text-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 500px;
+}
+
+.contact-text {
+  font-size: 20px;
+  text-align: center;
+}
+
 .all-individual-media {
   margin: 10px;
 }
@@ -465,7 +489,7 @@ body {
   margin-left: -60px;
 }
 
-.individual-media .individual-media-text::after {
+.individual-media-text::after {
   content: "";
   position: absolute;
   top: 100%;
@@ -482,7 +506,7 @@ body {
 
 /* Copyright */
 
-#topButton {
+#scroll-to-top-btn {
   background-color: var(--light-cyan);
   width: 50px;
   height: 50px;
@@ -491,8 +515,21 @@ body {
   margin: 0 auto
 }
 
-#topButton:hover {
+#scroll-to-top-btn:hover {
+  color: var(--navy);
   text-decoration: none;
+}
+
+.fa.fa-angle-double-up.scroll-to-top-icon {
+  font-size: 30px; 
+  margin-top: 10px; 
+  color: var(--light-gray);
+}
+
+.fa.fa-angle-double-up.scroll-to-top-icon:hover {
+  font-size: 30px; 
+  margin-top: 10px;
+  color: var(--navy);
 }
 
 .bottomnav {
