@@ -121,7 +121,6 @@ body {
   }
 }
 
-
 /* About */
 
 .rounded {
@@ -397,6 +396,7 @@ body {
 }
 
 .project-modal-image {
+  width: 100%;
   border-bottom: 2px solid #bbb;
 }
 
@@ -429,13 +429,13 @@ body {
   }
 }
 
-@media(min-width: 321px) and (max-width: 358px) {
+@media(min-width: 339px) and (max-width: 360px) {
   .project-media-button {
     padding: 5px;
   }
 }
 
-@media(min-width: 359px) and (max-width: 438px) {
+@media(min-width: 360px) and (max-width: 438px) {
   .project-media-button {
     padding: 10px;
   }
