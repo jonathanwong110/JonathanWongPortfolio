@@ -42,13 +42,18 @@ body {
 .nav-link {
   font-size: 17px;
   color: #64FFDA !important;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 575px) {
   .nav-link {
     margin-left: 0;
   }
+}
+
+.navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:focus {
+  outline-color: var(--light-cyan) !important;
+  box-shadow: none;
 }
 
 /* Background Image */
