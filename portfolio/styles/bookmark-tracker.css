@@ -1,0 +1,162 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background: url("https://i.pinimg.com/originals/de/1d/df/de1ddf9ee30e08e15460626b919ef87e.jpg");
+  background-size: cover;
+  background-position: 50% 60%;
+  background-attachment: fixed;
+  color: white;
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+:root {
+  --theme: #333399;
+  --theme-hover: #262673;
+}
+
+/* Headings */
+
+.app-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.app-title, .app-description {
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.app-description {
+  margin-bottom: 40px;
+}
+
+/* Modal */
+
+#modal-button {
+  margin: 0 auto;
+  display: block;
+  padding: 20px 32px;
+  color: white;
+  background-color: var(--theme);
+  font-size: 25px;
+  font-weight: 500;
+  max-width: 90%
+}
+
+#modal-button:hover {
+  background-color: var(--theme-hover)
+}
+
+#modal-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+#x-close-button {
+  color: white;
+}
+
+.modal-header {
+  color: white;
+  background-color: var(--theme);
+}
+
+/* Form Input */
+
+.form-label {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--theme)
+}
+
+#website-name, #website-url {
+  border-radius: 5px;
+  border: 2px solid var(--theme);
+  width: 100%;
+}
+
+#website-name:focus, #website-url:focus {
+  border: 2px solid var(--theme) !important;
+  outline-width: 0;
+}
+
+#form-save-button {
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  background-color: var(--theme);
+  border: 2px solid var(--theme) !important;
+}
+
+#form-save-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Bookmark Container */
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: auto;
+  background-color: var(--theme);
+  border-radius: 10px;
+  text-transform: uppercase;
+  padding: 20px;
+  margin: 10px;
+}
+
+.item:hover {
+  background-color: var(--theme-hover);
+}
+
+.item .name {
+  text-align: center;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.item i {
+  float: right;
+  margin-top: 5px;
+  color: white;
+}
+
+.item .name img {
+  max-width: 20px;
+  max-height: 20px;
+  vertical-align: sub;
+  margin-right: 5px;
+}
+
+.item a {
+  color: white;
+  font-weight: 500;
+  font-size: 20px
+}
+
+.item a:hover {
+  color: white
+}
+
+/* Media Query */
+
+@media screen and (max-width: 600px) {
+  .app-title, .app-description {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .container {
+    flex-direction: column;
+  }
+}
