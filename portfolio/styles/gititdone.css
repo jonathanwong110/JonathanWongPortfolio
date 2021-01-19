@@ -1,0 +1,131 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  text-align: center;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to bottom, #2c3e50 0%, #bdc3c7 100%);
+  font-family: Verdana, sans-serif;
+}
+
+/* Navbar */
+
+.navbar {
+  background-color:#343a40;
+  font-family: Verdana, sans-serif;
+}
+
+.navbar-brand {
+  font-size: 23px !important;
+}
+
+/* New To Do Submission */
+
+.new-task-form {
+  text-align: center;
+}
+
+.new-task-form input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 3.5px solid #595959;
+  min-width: 65%;
+  background: white;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 51px;
+}
+
+.new-task-form button {
+  position: relative;
+  right: 4px;
+  bottom: 1px;
+  width: 50px;
+  padding: 10px;
+  background: #343a40;
+  color: white;
+  font-size: 17px;
+  border: 3px solid #595959;;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.fa.fa-pencil {
+  position: relative;
+  bottom: 2px;
+}
+
+.new-task-form button:hover {
+  background: #595959;
+}
+
+/* To Do List */
+
+ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+.task {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+.task-input {
+  min-width: 65%;
+	padding: 10px 20px;
+	color: #ffffff;
+	border: 3px solid #595959;
+  border-radius: 5px;
+  text-align: left;
+	background: #343a40;
+	transition: all 0.75s ease;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
+.task button {
+  position: relative;
+  bottom: 2px;
+  border: 3px solid #595959;
+  background: #343a40;
+  padding-top: 7px;
+  padding-bottom: 11px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+  height: 56px;
+}
+
+.task button:hover {
+  background: #595959;
+}
+
+.fa.fa-edit {
+  position: relative;
+  top: 2px;
+  left: 2px;
+}
+
+@media (min-width: 453px) {
+  .remove {
+    border-right: 6px solid #595959 !important;
+  }
+}
+
+/* To Do Completed */
+
+.completed {
+  text-decoration: line-through black;
+  border: 3px solid green;
+}
