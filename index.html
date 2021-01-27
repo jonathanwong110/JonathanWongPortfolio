@@ -90,7 +90,7 @@
       <div class="row">
 
         <div id="about-text-container">
-          
+
           <p class="about-text">
             Hello! I'm Jonathan, a software engineer based in New York City.
           </p>
@@ -266,8 +266,26 @@
             aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered">
               <div class="modal-content">
-                <img class="project-modal-image" src="portfolio/img/projects/fullpictures/fullpicture-gidi.PNG"
-                  alt="portfolio image">
+                <!-- <img class="project-modal-image" src="portfolio/img/projects/fullpictures/fullpicture-gidi.PNG"
+                  alt="portfolio image"> -->
+
+                  <div class="slideshow-container">
+                    <div class="mySlides1">
+                      <img src="portfolio/img/projects/fullpictures/fullpicture-gidi-1.PNG" class="project-modal-image">
+                    </div>
+                  
+                    <div class="mySlides1">
+                      <img src="portfolio/img/projects/fullpictures/fullpicture-gidi-2.PNG" class="project-modal-image">
+                    </div>
+
+                    <div class="mySlides1">
+                      <img src="portfolio/img/projects/fullpictures/fullpicture-gidi-3.PNG" class="project-modal-image">
+                    </div>
+                  
+                    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                  </div>
+
                 <br></br>
                 <div class="project-modal-information">
                   A bug tracker where you and other users can assign and manage tasks amongst yourselves
@@ -394,7 +412,7 @@
                   alt="portfolio image">
                 <br></br>
                 <div class="project-modal-information">
-                 Application that assists users in project planning. Users can create, delete, drag, and
+                  Application that assists users in project planning. Users can create, delete, drag, and
                   drop tasks.
                   <br></br>
                   <p>Built using JavaScript, HTML, CSS, and localStorage</p>
@@ -402,10 +420,9 @@
                     class="project-media-button">
                     <i class="fas fa-external-link-alt project-media-button-icon"></i>GitHub
                   </a>
-                  <a href="https://kanban-board1.herokuapp.com/" target="_blank"
-                  class="project-media-button">
-                  <i class="fas fa-external-link-alt project-media-button-icon"></i>Live
-                </a>
+                  <a href="https://kanban-board1.herokuapp.com/" target="_blank" class="project-media-button">
+                    <i class="fas fa-external-link-alt project-media-button-icon"></i>Live
+                  </a>
                   <br></br>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -690,8 +707,9 @@
   </div>
 
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-  <script src="portfolio/js/projects.js"></script>
   <script src="portfolio/js/navbar.js"></script>
+  <script src="portfolio/js/project-filter.js"></script>
+  <script src="portfolio/js/slideshow.js"></script>
 
 </body>
 
