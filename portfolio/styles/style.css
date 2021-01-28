@@ -96,15 +96,14 @@ body {
   border: 2px solid #CCD6F6;
   padding: 10px 24px;
   letter-spacing: 2px;
-  font-weight: 500;
-  font-size: 18px;
+  font-size: 21.33px;
   white-space: nowrap;
   color: #CCD6F6;
 }
 
 .introduction-button:hover {
   border: 2px solid var(--light-teal);
-  color: #CCD6F6;
+  color: #ffffff;
   background-color: var(--light-teal);
   text-decoration: none;
 }
@@ -543,19 +542,17 @@ body {
   position: relative;
 }
 
-.individual-media .individual-media-text {
+.individual-media-text {
   visibility: hidden;
-  width: 130px;
+  position: absolute;
+  bottom: 125%;
+  right: 5%;
+  z-index: 1;
+  padding: 5px 15px;
   background-color: rgb(44, 43, 43);
   color: #fff;
   text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -60px;
+  padding: 5px 15px;
 }
 
 .individual-media-text::after {
@@ -563,7 +560,6 @@ body {
   position: absolute;
   top: 100%;
   left: 50%;
-  margin-left: -5px;
   border-width: 5px;
   border-style: solid;
   border-color: rgb(44, 43, 43) transparent transparent transparent;
@@ -576,12 +572,14 @@ body {
 /* Copyright */
 
 #scroll-to-top-btn {
+  position: relative;
+  top: 25px;
   background-color: var(--light-cyan);
   width: 50px;
   height: 50px;
   text-align: center; 
   display: block; 
-  margin: 0 auto
+  margin: 0 auto;
 }
 
 #scroll-to-top-btn:hover {
@@ -590,23 +588,22 @@ body {
 }
 
 .fa.fa-angle-double-up.scroll-to-top-icon {
-  font-size: 30px; 
+  font-size: 30px;
   margin-top: 10px; 
-  color: var(--light-gray);
+  color: #d9d9d9
 }
 
 .fa.fa-angle-double-up.scroll-to-top-icon:hover {
-  font-size: 30px; 
   margin-top: 10px;
   color: var(--navy);
 }
 
-.bottomnav {
+.bottom-nav {
   overflow: hidden;
+  padding: 20px 5px;
   background-color:black;
   color: white;
   text-align: center;
   font-size: 18px;
   letter-spacing: 2px;
-  width: 100vw;
 }
