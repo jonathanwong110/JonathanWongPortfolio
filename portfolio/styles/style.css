@@ -108,10 +108,16 @@ body {
   text-decoration: none;
 }
 
+.introduction-button:hover .view-work-icon-right, .introduction-button .view-work-icon-down {
+  display: none;
+}
+.introduction-button:hover .view-work-icon-down {
+  display: inline;
+}
 
-/* All Categories */
+/* All Sections */
 
-.category-heading {
+.section-heading {
   text-align: center;
   color: var(--light-cyan);
 }
