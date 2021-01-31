@@ -6,7 +6,7 @@ html {
 body {
   overflow-x: hidden;
   background-color: #020c1b !important;
-  color: #8892B0 !important;
+  color: var(--light-gray) !important;
   font-family: Verdana, Geneva, Tahoma, sans-serif !important;
   -webkit-font-smoothing: antialiased !important;
 }
@@ -540,7 +540,7 @@ body {
 
 /* Contact */
 
-.contact-text-container {
+.contact-text-container, .all-individual-media {
   margin-left: auto;
   margin-right: auto;
   max-width: 500px;
@@ -554,12 +554,13 @@ body {
   display: inline-block;
   padding: 10px;
   position: relative;
+  margin: auto;
 }
 
 .individual-media-text {
   visibility: hidden;
   position: absolute;
-  bottom: 125%;
+  bottom: 100%;
   right: 5%;
   z-index: 1;
   padding: 5px 15px;
@@ -574,13 +575,102 @@ body {
   position: absolute;
   top: 100%;
   left: 50%;
-  border-width: 5px;
+  border-width: 7px;
   border-style: solid;
   border-color: rgb(44, 43, 43) transparent transparent transparent;
 }
 
 .individual-media:hover .individual-media-text {
   visibility: visible
+}
+
+i.fab.fa-linkedin {
+  font-size: 55px;
+  color: #0A66C2; 
+  position: relative; 
+  bottom: 1px;
+  z-index: 100;
+}
+
+#linkedin-icon-background {
+  position: absolute;
+  top: 7px;
+  left: 4.5px;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  z-index: -100;
+}
+
+i.fab.fa-github-square {
+  font-size: 60px;
+  color: black;
+  position: relative; 
+  top: 2px;
+  z-index: 100;
+}
+
+#github-icon-background {
+  display: block;
+  position: absolute;
+  top: 18px;
+  left: 14px;
+  width: 42px;
+  height: 42px;
+  background-color: white;
+  z-index: -100;
+}
+
+i.fab.fa-medium {
+  font-size: 58px;
+  color: black;
+  position: relative; 
+  top: 2px;
+  z-index: 100;
+  border-radius: 10px !important;
+}
+
+#medium-icon-background {
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 14px;
+  width: 42px;
+  height: 40px;
+  background-color: white;
+  z-index: -100;
+}
+
+i.fab.fa-twitter-square {
+  font-size: 55px; 
+  color: #1DA1F2; 
+  position: relative; 
+  bottom: -1px;
+}
+
+#twitter-icon-background {
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 14px;
+  width: 42px;
+  height: 40px;
+  background-color: white;
+  z-index: -100;
+}
+
+i.fas.fa-envelope {
+  font-size: 60px; 
+  color: white; 
+  position: relative;
+  top: 2px;
+}
+
+i.fas.fa-folder {
+  font-size: 60px; 
+  color: #e8bb4d; 
+  position: relative; 
+  top: 2px;
 }
 
 /* Copyright */
