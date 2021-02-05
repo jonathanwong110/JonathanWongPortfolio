@@ -249,7 +249,7 @@ body {
 
 /* Portfolio Project Filter */
 
-#myBtnContainer {
+#project-filter-btn-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin-left: auto;
@@ -258,7 +258,7 @@ body {
 }
 
 @media (max-width: 1100px) {
-  #myBtnContainer {
+  #project-filter-btn-container {
     max-width: 630px;
   }
 }
@@ -270,11 +270,10 @@ body {
   height: 50px;
   width: 150px;
   background-color: var(--navy);
-  cursor: pointer;
   border: 1px solid var(--light-cyan);
   color: white;
   opacity: 0.6;
-  font-size: 14.67px;
+  font-size: 17px;
   transition-duration: var(--transition-speed);
 }
 
@@ -283,7 +282,7 @@ body {
 }
 
 @media (max-width: 449px) {
-  #myBtnContainer {
+  #project-filter-btn-container {
     grid-template-columns: repeat(1, 1fr);
   }
   .project-filter-btn {
@@ -294,7 +293,7 @@ body {
 }
 
 @media (min-width: 450px) and (max-width: 850px) {
-  #myBtnContainer {
+  #project-filter-btn-container {
     grid-template-columns: repeat(2, 1fr);
     max-width: 337px;
   }
@@ -605,7 +604,7 @@ i.fab.fa-linkedin {
 }
 
 i.fab.fa-github-square {
-  font-size: 60px;
+  font-size: 55px;
   color: black;
   position: relative; 
   top: 2px;
@@ -624,7 +623,7 @@ i.fab.fa-github-square {
 }
 
 i.fab.fa-medium {
-  font-size: 58px;
+  font-size: 55px;
   color: black;
   position: relative; 
   top: 2px;
@@ -662,17 +661,17 @@ i.fab.fa-twitter-square {
 }
 
 i.fas.fa-envelope {
-  font-size: 60px; 
+  font-size: 55px; 
   color: white; 
   position: relative;
-  top: 2px;
+  top: 4px;
 }
 
 i.fas.fa-folder {
-  font-size: 60px; 
+  font-size: 55px; 
   color: #e8bb4d; 
   position: relative; 
-  top: 2px;
+  top: 4px;
 }
 
 /* Copyright */
@@ -689,19 +688,19 @@ i.fas.fa-folder {
 }
 
 #scroll-to-top-btn:hover {
-  color: var(--navy);
+  color: #d9d9d9;
   text-decoration: none;
 }
 
 .fa.fa-angle-double-up.scroll-to-top-icon {
   font-size: 30px;
-  margin-top: 10px; 
-  color: #d9d9d9
+  margin-top: 10px;
+  color: var(--navy);
 }
 
 .fa.fa-angle-double-up.scroll-to-top-icon:hover {
   margin-top: 10px;
-  color: var(--navy);
+  color: var(--light-gray);
 }
 
 .bottom-nav {
