@@ -401,7 +401,7 @@ body {
   position: relative;
   bottom: 150px;
   background-color: white;
-  border-color: var(--light-teal);
+  border: 2px solid var(--light-teal);
   padding: 10px 24px;
   font-weight: 500;
   font-size: 17px;
@@ -424,7 +424,7 @@ body {
   opacity: 1;
 }
 
-@media(max-width: 575px) {
+@media (max-width: 575px) {
   .modal-content {
     width: 90% !important;
     margin: 5% 5% 5% 5%;
