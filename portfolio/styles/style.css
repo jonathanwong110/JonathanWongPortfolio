@@ -161,7 +161,7 @@ body {
 /* About */
 
 .rounded {
-  border-top: 4px solid #b3b3b3 !important;
+  border-top: 4px solid #b3b3b3;
   text-align: center;
   width: 100px;
 }

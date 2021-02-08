@@ -60,6 +60,7 @@ function getBookmarks() {
   if (localStorage.getItem('bookmarks')) {
     bookmarks = JSON.parse(localStorage.getItem('bookmarks'));
   } else {
+    let id = `Bookmark List`
     bookmarks[id] = {
       name: 'YouTube',
       url: 'https://youtube.com/'
