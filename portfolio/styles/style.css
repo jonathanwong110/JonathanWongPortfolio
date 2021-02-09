@@ -160,7 +160,8 @@ body {
 
 /* About */
 
-.rounded {
+.section-heading-underline {
+  border-radius: .25rem !important;
   border-top: 4px solid #b3b3b3;
   text-align: center;
   width: 100px;
