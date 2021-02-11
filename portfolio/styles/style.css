@@ -378,7 +378,6 @@ body {
 }
 
 .project-title {
-  white-space: nowrap;
   font-size: 22px;
   color: white;
 }
@@ -408,7 +407,7 @@ body {
   font-size: 17px;
   white-space: nowrap;
   color: var(--navy);
-  transition-duration: var(--transition-speed);
+  transition-duration: 0.1s;
 }
 
 .learn-more-button:focus {
