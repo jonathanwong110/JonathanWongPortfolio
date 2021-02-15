@@ -444,7 +444,7 @@ body {
 
 .project-modal-image {
   width: 100%;
-  border-bottom: 2px solid #bbb;
+  border-bottom: 2px solid black;
 }
 
 /* Next & previous buttons */
@@ -483,9 +483,7 @@ body {
 }
 
 .project-modal-information-container {
-  margin-left: 20px;
-  margin-right: 20px;
-  padding: 35px 60px 90px 25px;
+  padding: 35px 60px 60px 35px;
   text-align: left;
   color: black;
 }
@@ -508,8 +506,6 @@ body {
 
 @media (max-width: 360px) {
   .project-modal-information-container {
-    margin-left: 20px;
-    margin-right: 20px;
     padding: 20px;
   }
   .project-modal-information-title {
@@ -531,7 +527,7 @@ body {
   background-color: var(--light-teal);
   border: 2px solid var(--light-teal);
   padding: 5px 12px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-weight: 500;
   font-size: 18px;
   white-space: nowrap;
@@ -570,11 +566,17 @@ body {
 
 .project-media-button-icon {
   padding-right: 8px;
+  font-size: 16px;
 }
 
 .project-media-close-button {
   color: var(--light-gray);
   cursor: pointer;
+  float: right;
+}
+
+.project-media-close-button::before {
+  font-size: 24px;
 }
 
 /* Blog Section */
