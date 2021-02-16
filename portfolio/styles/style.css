@@ -565,8 +565,10 @@ body {
 }
 
 .project-media-button-icon {
+  position: relative;
+  bottom: 2px;
   padding-right: 8px;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .project-media-close-button {
