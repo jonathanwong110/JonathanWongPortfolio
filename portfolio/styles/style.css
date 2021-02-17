@@ -444,7 +444,7 @@ body {
 
 .project-modal-image {
   width: 100%;
-  border-bottom: 2px solid black;
+  border-bottom: 3px solid black;
 }
 
 /* Next & previous buttons */
@@ -483,7 +483,7 @@ body {
 }
 
 .project-modal-information-container {
-  padding: 35px 60px 60px 35px;
+  padding: 35px 60px 35px 35px;
   text-align: left;
   color: black;
 }
