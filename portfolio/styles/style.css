@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   background-color: var(--navy) !important;
   color: var(--light-gray) !important;
   font-family: Verdana, Geneva, Tahoma, sans-serif !important;
@@ -48,7 +48,7 @@ body {
 }
 
 .navbar-toggler-icon {
-  color: #64FFDA !important;
+  color: var(--light-cyan) !important;
 }
 
 .navbar-brand, .nav-link {
@@ -56,8 +56,8 @@ body {
 }
 
 .nav-link {
-  font-size: 18px;
-  color: #64FFDA !important;
+  font-size: 16px;
+  color: var(--light-cyan) !important;
   margin-left: 10px;
 }
 
@@ -285,7 +285,7 @@ body {
   width: 150px;
   background-color: var(--navy);
   border: 1px solid var(--light-cyan);
-  color: white;
+  color: var(--light-cyan);
   opacity: 0.6;
   font-size: 17px;
   transition-duration: var(--transition-speed);
@@ -293,6 +293,17 @@ body {
 
 .project-filter-btn:focus {
   outline: none;
+}
+
+.project-filter-btn.active {
+  background-color: var(--light-cyan);
+  color: #020c1b;
+  opacity: 1;
+}
+
+.project-filter-btn:hover {
+  background-color: var(--light-cyan);
+  color: #020c1b;
 }
 
 @media (max-width: 449px) {
@@ -315,17 +326,6 @@ body {
     margin-top: 10px;
     margin-bottom: 10px;
   }
-}
-
-.project-filter-btn:hover {
-  background-color: var(--light-cyan);
-  color: #020c1b;
-}
-
-.project-filter-btn.active {
-  background-color: var(--light-cyan);
-  color: #020c1b;
-  opacity: 1;
 }
 
 /* Portfolio Projects */
@@ -412,13 +412,13 @@ body {
   visibility: hidden;
   position: relative;
   bottom: 150px;
-  background-color: white;
+  background-color: var(--navy);
   border: 2px solid var(--light-teal);
+  color: var(--light-teal);
   padding: 10px 24px;
   font-weight: 500;
   font-size: 17px;
   white-space: nowrap;
-  color: var(--navy);
   transition-duration: 0.1s;
 }
 
@@ -428,7 +428,7 @@ body {
 
 .learn-more-button:hover {
   background-color: var(--light-teal);
-  color: white;
+  color: var(--navy);
 }
 
 .grid-item-project:hover .learn-more-button  {
