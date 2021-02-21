@@ -13,9 +13,12 @@ body {
 
 :root {
   --light-cyan: #64FFDA;
-  --light-teal: #04c2c9;
+  --light-cyan-background-opacity-light: rgb(100, 255, 218, 0.1);
+  --light-cyan-background-opacity-heavy: rgb(100, 255, 218, 0.2);
+  /* --light-teal: #04c2c9; */
   --light-gray: #8892B0;
   --navy: #0a192f;
+  --border-radius: 5px;
   --transition-speed: 0.5s
 }
 
@@ -23,7 +26,7 @@ body {
 
 #navbar {
   background: var(--navy) !important;
-  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  box-shadow: 0 0 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
 @media (max-width: 575px) {
@@ -101,7 +104,7 @@ body {
 @media (max-width: 820px) {
   .background-text {
     white-space: normal;
-    font-size: 6vw;
+    font-size: 8vw;
   }
 }
 
@@ -114,12 +117,13 @@ body {
 /* Button on Background Image */
 
 .introduction-button {
-  border: 2px solid #CCD6F6;
-  padding: 10px 24px;
+  border: 2px solid var(--light-cyan);
+  padding: 20px 28px;
   letter-spacing: 2px;
-  font-size: 21.33px;
+  font-size: 18px;
+  border-radius: var(--border-radius);
   white-space: nowrap;
-  color: #CCD6F6;
+  color: var(--light-cyan);
   transition-duration: var(--transition-speed);
 }
 
@@ -130,9 +134,9 @@ body {
 }
 
 .introduction-button:hover {
-  border: 2px solid var(--light-teal);
-  color: #ffffff;
-  background-color: var(--light-teal);
+  border: 2px solid var(--light-cyan);
+  color: var(--light-cyan);
+  background-color: var(--light-cyan-background-opacity-light);
   text-decoration: none;
   transition-duration: var(--transition-speed);
 }
@@ -281,10 +285,11 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border-radius: var(--border-radius);
   height: 50px;
   width: 150px;
   background-color: var(--navy);
-  border: 1px solid var(--light-cyan);
+  border: 2px solid var(--light-cyan);
   color: var(--light-cyan);
   opacity: 0.6;
   font-size: 17px;
@@ -301,9 +306,15 @@ body {
   opacity: 1;
 }
 
-.project-filter-btn:hover {
+.project-filter-btn.active:hover {
   background-color: var(--light-cyan);
   color: #020c1b;
+  opacity: 1;
+}
+
+.project-filter-btn:hover {
+  background-color: var(--light-cyan-background-opacity-heavy);
+  color: var(--light-cyan)
 }
 
 @media (max-width: 449px) {
@@ -396,7 +407,7 @@ body {
 
 .project-technology {
   font-size: 16px;
-  color: var(--light-teal);
+  color: var(--light-cyan);
   white-space: nowrap;
 }
 
@@ -411,10 +422,11 @@ body {
 .learn-more-button {
   visibility: hidden;
   position: relative;
+  border-radius: var(--border-radius);
   bottom: 150px;
   background-color: var(--navy);
-  border: 2px solid var(--light-teal);
-  color: var(--light-teal);
+  border: 2px solid var(--light-cyan);
+  color: var(--light-cyan);
   padding: 10px 24px;
   font-weight: 500;
   font-size: 17px;
@@ -427,8 +439,8 @@ body {
 }
 
 .learn-more-button:hover {
-  background-color: var(--light-teal);
-  color: var(--navy);
+  background-color: rgb(100, 255, 218, 0.1);
+  color: var(--light-cyan)
 }
 
 .grid-item-project:hover .learn-more-button  {
@@ -498,13 +510,14 @@ body {
 .project-modal-information-container {
   padding: 35px 60px 35px 35px;
   text-align: left;
-  color: black;
+  background-color: var(--navy)
 }
 
 .project-modal-information-title {
   font-size: 29px !important;
   font-weight: 500;
   margin-bottom: 15px;
+  color: var(--light-cyan)
 }
 
 .project-modal-information-description {
@@ -537,14 +550,12 @@ body {
 }
 
 .project-media-button {
-  background-color: var(--light-teal);
-  border: 2px solid var(--light-teal);
+  border: 2px solid var(--light-cyan);
   padding: 5px 12px;
   letter-spacing: 1px;
-  font-weight: 500;
   font-size: 18px;
   white-space: nowrap;
-  color: white;
+  color: var(--light-cyan);
   margin-right: 15px;
 }
 
@@ -571,10 +582,10 @@ body {
 }
 
 .project-media-button:hover {
-  background-color: white;
+  background-color: var(--light-cyan-background-opacity);
   text-decoration: none;
-  border: 2px solid var(--light-teal);
-  color: var(--light-teal);
+  border: 2px solid var(--light-cyan);
+  color: var(--light-cyan);
 }
 
 .project-media-button-icon {
@@ -689,6 +700,27 @@ body {
 
 .contact-text {
   font-size: 20px;
+}
+
+.get-in-touch-container {
+  text-align: center;
+}
+
+.get-in-touch-link {
+  border: 2px solid var(--light-cyan);
+  padding: 20px 28px;
+  letter-spacing: 2px;
+  font-size: 18px;
+  border-radius: var(--border-radius);
+  white-space: nowrap;
+  color: var(--light-cyan);
+  transition-duration: var(--transition-speed);
+}
+
+.get-in-touch-link:hover {
+  text-decoration: none;
+  color: var(--light-cyan);
+  background-color: var(--light-cyan-background-opacity-light)
 }
 
 .individual-media {
