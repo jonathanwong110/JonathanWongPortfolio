@@ -551,6 +551,7 @@ body {
 
 .project-media-button {
   border: 2px solid var(--light-cyan);
+  border-radius: var(--border-radius);
   padding: 5px 12px;
   letter-spacing: 1px;
   font-size: 18px;
@@ -582,7 +583,7 @@ body {
 }
 
 .project-media-button:hover {
-  background-color: var(--light-cyan-background-opacity);
+  background-color: var(--light-cyan-background-opacity-light);
   text-decoration: none;
   border: 2px solid var(--light-cyan);
   color: var(--light-cyan);
