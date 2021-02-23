@@ -431,7 +431,7 @@ body {
   font-weight: 500;
   font-size: 17px;
   white-space: nowrap;
-  transition-duration: 0.1s;
+  transition-duration: var(--transition-speed);
 }
 
 .learn-more-button:focus {
@@ -469,7 +469,7 @@ body {
 
 .project-modal-image {
   width: 100%;
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid var(--light-gray);
 }
 
 /* Next & previous buttons */
@@ -550,14 +550,20 @@ body {
 }
 
 .project-media-button {
+  background-color: var(--navy);
   border: 2px solid var(--light-cyan);
   border-radius: var(--border-radius);
-  padding: 5px 12px;
+  width: 140px;
+  padding: 10px 24px;
   letter-spacing: 1px;
   font-size: 18px;
   white-space: nowrap;
   color: var(--light-cyan);
   margin-right: 15px;
+  font-weight: 500;
+  font-size: 17px;
+  white-space: nowrap;
+  transition-duration: 0.1s;
 }
 
 .project-media-button:focus {
