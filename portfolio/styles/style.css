@@ -390,7 +390,7 @@ body {
   height: 100%;
   width: 100%;
   opacity: 1;
-  transition-duration: var(--transition-speed);
+  transition-duration: 1s;
   backface-visibility: hidden;
 }
 
@@ -431,7 +431,7 @@ body {
   font-weight: 500;
   font-size: 17px;
   white-space: nowrap;
-  transition-duration: var(--transition-speed);
+  opacity: 0.6;
 }
 
 .learn-more-button:focus {
@@ -440,7 +440,8 @@ body {
 
 .learn-more-button:hover {
   background-color: rgb(100, 255, 218, 0.1);
-  color: var(--light-cyan)
+  color: var(--light-cyan);
+  opacity: 1;
 }
 
 .grid-item-project:hover .learn-more-button  {
@@ -563,7 +564,7 @@ body {
   font-weight: 500;
   font-size: 17px;
   white-space: nowrap;
-  transition-duration: 0.1s;
+  transition-duration: var(--transition-speed)
 }
 
 .project-media-button:focus {
@@ -597,9 +598,9 @@ body {
 
 .project-media-button-icon {
   position: relative;
-  bottom: 2px;
+  bottom: 3px;
   padding-right: 8px;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .project-media-close-button {
@@ -713,7 +714,7 @@ body {
   text-align: center;
 }
 
-.get-in-touch-link {
+.get-in-touch-button {
   border: 2px solid var(--light-cyan);
   padding: 20px 28px;
   letter-spacing: 2px;
@@ -724,7 +725,7 @@ body {
   transition-duration: var(--transition-speed);
 }
 
-.get-in-touch-link:hover {
+.get-in-touch-button:hover {
   text-decoration: none;
   color: var(--light-cyan);
   background-color: var(--light-cyan-background-opacity-light)
