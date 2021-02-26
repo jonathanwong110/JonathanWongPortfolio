@@ -12,3 +12,7 @@ var currentScrollPos = window.pageYOffset;
 $('.nav-link').on('click',function() {
   $('.navbar-collapse').collapse('hide');
 });
+
+function changeNavbarIcon(x) {
+  x.classList.toggle("change");
+}
