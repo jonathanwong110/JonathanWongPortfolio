@@ -221,6 +221,11 @@ body {
   font-size: 20px;
 }
 
+.about-text-link:hover {
+  text-decoration: none;
+  border-bottom: 1px solid var(--light-cyan);
+}
+
 /* Technical Skills */
 
 .grid-container-skills {
@@ -417,7 +422,7 @@ body {
   height: 100%;
   width: 100%;
   opacity: 1;
-  transition-duration: 1s;
+  transition-duration: var(--transition-speed);
   backface-visibility: hidden;
 }
 
@@ -625,7 +630,7 @@ body {
 
 .project-media-button-icon {
   position: relative;
-  bottom: 3px;
+  bottom: 2px;
   padding-right: 8px;
   font-size: 13px;
 }
