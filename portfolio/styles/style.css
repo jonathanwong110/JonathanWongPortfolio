@@ -1,14 +1,16 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  width: 100%;
 }
 
 body {
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   background-color: var(--navy) !important;
   color: var(--dark-gray) !important;
   font-family: Verdana, Geneva, Tahoma, sans-serif !important;
   -webkit-font-smoothing: antialiased !important;
+  width: 100%;
 }
 
 :root {
@@ -84,6 +86,10 @@ body {
   font-size: 16px;
   margin-right: 10px;
   color: var(--light-gray) !important;
+}
+
+.nav-link.active {
+  color: var(--light-cyan) !important;
 }
 
 .nav-link:hover {
@@ -177,11 +183,27 @@ body {
 
 /* All Sections */
 
+.section-heading-above-space {
+  height: 100px;
+}
+
 .section-heading {
   text-align: center;
   color: var(--light-cyan);
   font-weight: 500;
 }
+
+.section-heading-underline {
+  border-radius: .25rem !important;
+  border-top: 4px solid #b3b3b3;
+  text-align: center;
+  width: 100px;
+}
+
+.section-heading-under-space {
+  height: 60px;
+}
+
 
 #about, #skills, #portfolio, #contact {
   margin-right: auto;
@@ -203,13 +225,6 @@ body {
 }
 
 /* About */
-
-.section-heading-underline {
-  border-radius: .25rem !important;
-  border-top: 4px solid #b3b3b3;
-  text-align: center;
-  width: 100px;
-}
 
 #about-text-container {
   max-width: 930px;
@@ -775,7 +790,7 @@ body {
   position: absolute;
   bottom: 100%;
   right: 5%;
-  z-index: 1;
+  z-index: 100;
   padding: 5px 15px;
   background-color: rgb(44, 43, 43);
   color: #fff;
@@ -911,10 +926,15 @@ i.fas.fa-folder {
 
 .bottom-nav {
   background-color: #040b15;
-  overflow: hidden;
   padding: 20px 5px;
   color: white;
   text-align: center;
   font-size: 18px;
   letter-spacing: 2px;
+}
+
+#bottom-nav-text {
+  color: var(--light-gray);
+  padding-top: 30px;
+  padding-bottom: 20px;
 }

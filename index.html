@@ -39,7 +39,8 @@
 
     <!-- Toggler/collapsibe Button -->
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" onclick="changeNavbarIcon(this)">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"
+      onclick="changeNavbarIcon(this)">
       <!-- <i class="fas fa-bars" style="color: #64FFDA; font-size: 28px;"></i> -->
       <div class="bar1"></div>
       <div class="bar2"></div>
@@ -49,6 +50,9 @@
     <!-- Navbar links -->
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav ml-auto">
+        <!-- <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li> -->
         <li class="nav-item">
           <a class="nav-link" href="#about">About</a>
         </li>
@@ -70,7 +74,7 @@
 
   <!-- Background Image -->
 
-  <div>
+  <section id="home" class="section">
     <img src="portfolio/img/background/background.jpg" alt="background" class="background-image">
     <h1 class="background-text">
       <p>Hi, I'm<span id="highlighted-name"> Jonathan Wong</span>.</p>
@@ -81,19 +85,16 @@
         <i class="fa fa-arrow-down view-work-icon-down" style="margin-left: 7px"></i>
       </a>
     </h1>
-  </div>
+  </section>
 
   <!-- About Section -->
 
-  <div id="about" class="section">
+  <section id="about" class="section">
 
-    <br></br>
-    <br></br>
-
+    <div class="section-heading-above-space"></div>
     <h1 class="section-heading">ABOUT</h1>
     <hr class="section-heading-underline">
-
-    <br></br>
+    <div class="section-heading-under-space"></div>
 
     <div class="container">
 
@@ -114,14 +115,16 @@
           <p class="about-text">
             Before coding, I studied Economics and Public Policy at Hunter College and worked in the
             political/non-profit sphere. After I discovered coding, I studied it at
-            <span><a href="https://flatironschool.com/" target="_blank" class="about-text-link" style="color:#64FFDA">Flatiron School</a></span>
+            <span><a href="https://flatironschool.com/" target="_blank" class="about-text-link"
+                style="color:#64FFDA">Flatiron School</a></span>
             and graduated.
           </p>
 
           <p class="about-text">
             In my free time, I build small apps to learn new skills and write blog posts on anything and everything
             coding related on
-            <span><a href="https://jonathan-wong.medium.com" target="_blank" class="about-text-link" style="color:#64FFDA">Medium</a></span>
+            <span><a href="https://jonathan-wong.medium.com" target="_blank" class="about-text-link"
+                style="color:#64FFDA">Medium</a></span>
             .In addition to coding and programming, you'll find me learning, reading, sketching, or taking pictures with
             my
             DSLR camera.
@@ -137,19 +140,16 @@
     <br></br>
     <br></br>
 
-  </div>
+  </section>
 
   <!-- Skills Section -->
 
-  <div id="skills" class="section">
+  <section id="skills" class="section">
 
-    <br></br>
-    <br></br>
-
+    <div class="section-heading-above-space"></div>
     <h1 class="section-heading">TECHNICAL SKILLS</h1>
     <hr class="section-heading-underline">
-
-    <br></br>
+    <div class="section-heading-under-space"></div>
 
     <div class="container">
 
@@ -233,19 +233,16 @@
     <br></br>
     <br></br>
 
-  </div>
+  </section>
 
   <!-- Portfolio Section -->
 
-  <div id="portfolio" class="section">
+  <section id="portfolio" class="section">
 
-    <br></br>
-    <br></br>
-
+    <div class="section-heading-above-space"></div>
     <h1 class="section-heading">PROJECTS</h1>
     <hr class="section-heading-underline">
-
-    <br></br>
+    <div class="section-heading-under-space"></div>
 
     <div class="container">
 
@@ -693,22 +690,18 @@
     <br></br>
     <br></br>
 
-  </div>
+  </section>
 
   <!-- Blog Section -->
 
-  <div id="blog" class="section">
+  <section id="blog" class="section">
 
-    <br></br>
-    <br></br>
-
+    <div class="section-heading-above-space"></div>
     <h1 class="section-heading">BLOG</h1>
     <hr class="section-heading-underline">
-
+    <div class="section-heading-under-space"></div>
 
     <div class="container">
-
-      <br></br>
 
       <div class="grid-container-blog-posts">
 
@@ -747,7 +740,6 @@
 
         </a>
 
-
         <a href="https://jonathan-wong.medium.com/javascript-what-is-hoisting-108c6315915f" target="_blank"
           class="blog-post-link">
 
@@ -772,23 +764,17 @@
 
     </div>
 
-    <br></br>
-    <br></br>
-    <br></br>
-
-  </div>
+  </section>
 
   <!-- Contact Section -->
 
-  <div id="contact">
+  <section id="contact" class="section">
 
-    <br></br>
-    <br></br>
-
+    <div class="section-heading-above-space"></div>
+    <div style="margin-top: 200px;"></div>
     <h1 class="section-heading">CONTACT</h1>
     <hr class="section-heading-underline">
-
-    <br></br>
+    <div class="section-heading-under-space"></div>
 
     <div class="contact-text-container">
       <p class="contact-text">
@@ -796,11 +782,13 @@
         hello, my inbox is always open and I'll get back to you.
       </p>
       <br></br>
+      <br></br>
       <div class="get-in-touch-container">
         <a href="mailto:jonathan.wong110@gmail.com" target="_blank" class="get-in-touch-button">
           Get In Touch
         </a>
       </div>
+      <br></br>
       <br></br>
     </div>
 
@@ -841,13 +829,6 @@
           </a>
         </div>
 
-        <!-- <div class="individual-media">
-          <a href="mailto:jonathan.wong110@gmail.com" target="_blank">
-            <i class="fas fa-envelope"></i>
-            <p class="individual-media-text">Email</p>
-          </a>
-        </div> -->
-
         <div class="individual-media">
           <a href="resume.pdf" target="_blank">
             <i class="fas fa-folder"></i>
@@ -859,11 +840,12 @@
 
     </div>
 
+    <div style="margin-top: 170px;"></div>
 
-  </div>
+    <br></br>
+    <br></br>
 
-  <br></br>
-  <br></br>
+  </section>
 
   <!-- Copyright Section -->
 
@@ -872,11 +854,9 @@
   </a>
 
   <div class="bottom-nav">
-    <p></p>
     <p id="bottom-nav-text">Jonathan Wong
       <span style="color: #64FFDA">&copy;2020</span>
     </p>
-    <p></p>
   </div>
 
   <script src="portfolio/scripts/navbar.js"></script>
