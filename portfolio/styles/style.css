@@ -24,6 +24,21 @@ body {
   --transition-speed: 0.5s
 }
 
+::selection {
+  background: var(--dark-gray); /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: var(--dark-gray); /* Gecko Browsers */
+}
+
+p.about-text::selection, p.contact-text::selection, p.skill-item-heading::selection {
+  background: var(--light-gray); /* WebKit/Blink Browsers */
+}
+
+p.about-text::-moz-selection, p.contact-text::-moz-selection, p.skill-item-heading::selection {
+  background: var(--light-gray); /* WebKit/Blink Browsers */
+}
+
 /* Navbar */
 
 #navbar {
