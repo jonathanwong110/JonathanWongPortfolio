@@ -923,6 +923,7 @@ i.fas.fa-folder {
   text-align: center; 
   display: block; 
   margin: 0 auto;
+  cursor: pointer;
 }
 
 #scroll-to-top-btn:hover {
