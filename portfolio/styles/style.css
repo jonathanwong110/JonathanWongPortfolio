@@ -101,7 +101,7 @@ body {
   color: var(--light-cyan) !important;
 }
 
-.nav-link:hover {
+.navbar-brand, .nav-link:hover {
   color: var(--light-cyan) !important;
   cursor: pointer;
 }
