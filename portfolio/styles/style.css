@@ -80,7 +80,9 @@ body {
   transform: rotate(-45deg) translate(-9px, 6px);
 }
 
-.change .bar2 {opacity: 0;}
+.change .bar2 {
+  opacity: 0;
+}
 
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
@@ -270,7 +272,6 @@ body {
 
 .skill-item-heading {
   font-size: 23px;
-  font-weight: 400;
 }
 
 @media (min-width: 320px) {
@@ -486,7 +487,6 @@ body {
   border: 2px solid var(--light-cyan);
   color: var(--light-cyan);
   padding: 10px 24px;
-  font-weight: 500;
   font-size: 17px;
   white-space: nowrap;
   opacity: 0.6;
@@ -574,7 +574,6 @@ body {
 
 .project-modal-information-title {
   font-size: 29px !important;
-  font-weight: 500;
   margin-bottom: 15px;
   color: var(--light-cyan)
 }
@@ -585,7 +584,7 @@ body {
 }
 
 .project-modal-information-tech {
-  font-size: 15px !important;
+  font-size: 16px !important;
   margin-bottom: 25px;
 }
 
@@ -595,7 +594,6 @@ body {
   }
   .project-modal-information-title {
     font-size: 20px !important;
-    font-weight: 500;
     margin-bottom: 10px;
   }
   .project-modal-information-description {
@@ -614,15 +612,13 @@ body {
   border-radius: var(--border-radius);
   width: 140px;
   padding: 10px 24px;
-  letter-spacing: 1px;
   font-size: 18px;
   white-space: nowrap;
   color: var(--light-cyan);
   margin-right: 15px;
-  font-weight: 500;
   font-size: 17px;
   white-space: nowrap;
-  transition-duration: var(--transition-speed)
+  transition-duration: var(--transition-speed);
 }
 
 .project-media-button:focus {
@@ -643,7 +639,14 @@ body {
 
 @media (min-width: 360px) and (max-width: 438px) {
   .project-media-button {
-    padding: 10px;
+    padding: 10px 12px;
+  }
+}
+
+@media (max-width: 520px) {
+  .project-media-button {
+    margin-bottom: 20px;
+    margin-right: 50px;
   }
 }
 
@@ -665,6 +668,8 @@ body {
   color: var(--dark-gray);
   cursor: pointer;
   float: right;
+  position: relative;
+  top: 10px;
 }
 
 .project-media-close-button::before {
