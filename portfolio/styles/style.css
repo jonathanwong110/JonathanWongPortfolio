@@ -713,10 +713,22 @@ body {
   }
 }
 
+.grid-container-blog-posts:hover a > .grid-item-blog-post {
+  opacity: 0.4;
+}
+
+.grid-container-blog-posts:hover a > .grid-item-blog-post:hover {
+  opacity: 1;
+}
+
 .blog-post-link {
   min-width: 150px;
   max-width: 303.3px;
   height: 400px;
+}
+
+.blog-post-link:hover {
+  text-decoration: none;
 }
 
 .blog-image {
@@ -739,10 +751,6 @@ body {
 
 .blog-date {
   font-size: 15px;
-}
-
-.blog-post-link:hover {
-  text-decoration: none;
 }
 
 .blog-post-link:hover .blog-information-container {
