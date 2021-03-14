@@ -900,10 +900,10 @@ i.fab.fa-github-square {
 }
 
 i.fab.fa-medium {
-  font-size: 55px;
+  font-size: 57px;
   color: black;
   position: relative; 
-  top: 2px;
+  top: 1px;
   z-index: 100;
   border-radius: 10px !important;
 }
@@ -940,15 +940,52 @@ i.fab.fa-twitter-square {
 i.fas.fa-envelope {
   font-size: 55px; 
   color: white; 
-  position: relative;
-  top: 4px;
+  margin-top: 10px;
 }
 
-i.fas.fa-folder {
-  font-size: 55px; 
-  color: #e8bb4d; 
-  position: relative; 
-  top: 4px;
+i.fas.fa-file-pdf {
+  font-size: 40px; 
+  color: white; 
+  margin-left: 4px;
+}
+
+.contact-heading {
+  font-size: 20px;
+}
+
+.media-grid-contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  width: 350px;
+  margin-left: 4px;
+}
+
+@media (max-width: 470px) {
+  .media-grid-contact {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #email-link div {
+    font-size: 16px;
+  }
+}
+
+#email-link {
+  color: var(--dark-gray);
+  font-size: 18px;
+  margin-top: 22px;
+}
+
+#email-link:hover {
+  color: var(--light-cyan);
+}
+
+#email-link:hover {
+  text-decoration: none;
+}
+
+.media-grid-social {
+  margin-left: 4px;
 }
 
 /* Copyright */
