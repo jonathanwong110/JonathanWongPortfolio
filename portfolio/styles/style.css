@@ -863,7 +863,7 @@ body {
 }
 
 i.fab.fa-linkedin {
-  font-size: 55px;
+  font-size: 54px;
   color: #0A66C2; 
   position: relative; 
   bottom: 1px;
@@ -881,7 +881,7 @@ i.fab.fa-linkedin {
 }
 
 i.fab.fa-github-square {
-  font-size: 55px;
+  font-size: 58px;
   color: black;
   position: relative; 
   top: 2px;
@@ -905,7 +905,6 @@ i.fab.fa-medium {
   position: relative; 
   top: 1px;
   z-index: 100;
-  border-radius: 10px !important;
 }
 
 #medium-icon-background {
