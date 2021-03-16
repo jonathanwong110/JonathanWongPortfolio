@@ -864,10 +864,14 @@ body {
 
 i.fab.fa-linkedin {
   font-size: 54px;
-  color: #0A66C2; 
+  color: var(--dark-gray); 
   position: relative; 
   bottom: 1px;
   z-index: 100;
+}
+
+i.fab.fa-linkedin:hover {
+  color: #0A66C2;
 }
 
 #linkedin-icon-background {
@@ -880,31 +884,16 @@ i.fab.fa-linkedin {
   z-index: -100;
 }
 
-i.fab.fa-github-square {
-  font-size: 58px;
-  color: black;
-  position: relative; 
-  top: 2px;
-  z-index: 100;
-}
-
-#github-icon-background {
-  display: block;
-  position: absolute;
-  top: 18px;
-  left: 14px;
-  width: 42px;
-  height: 42px;
-  background-color: white;
-  z-index: -100;
-}
-
 i.fab.fa-medium {
   font-size: 57px;
-  color: black;
+  color: var(--dark-gray);
   position: relative; 
   top: 1px;
   z-index: 100;
+}
+
+i.fab.fa-medium:hover {
+  color: black;
 }
 
 #medium-icon-background {
@@ -918,11 +907,38 @@ i.fab.fa-medium {
   z-index: -100;
 }
 
-i.fab.fa-twitter-square {
-  font-size: 55px; 
-  color: #1DA1F2; 
+i.fab.fa-github-square {
+  font-size: 58px;
+  color: var(--dark-gray);
   position: relative; 
-  bottom: -1px;
+  top: 2px;
+  z-index: 100;
+}
+
+i.fab.fa-github-square:hover {
+  color: black;
+}
+
+#github-icon-background {
+  display: block;
+  position: absolute;
+  top: 18px;
+  left: 14px;
+  width: 42px;
+  height: 42px;
+  background-color: white;
+  z-index: -100;
+}
+
+i.fab.fa-twitter-square {
+  font-size: 59px; 
+  color: var(--dark-gray); 
+  position: relative; 
+  bottom: -4px;
+}
+
+i.fab.fa-twitter-square:hover {
+  color: #1DA1F2; 
 }
 
 #twitter-icon-background {
@@ -936,16 +952,24 @@ i.fab.fa-twitter-square {
   z-index: -100;
 }
 
-i.fas.fa-envelope {
-  font-size: 55px; 
-  color: white; 
+i.fa.fa-envelope {
+  font-size: 40px;
   margin-top: 10px;
+  color: var(--light-gray); 
+}
+
+i.fa.fa-envelope:hover {
+  color: var(--light-cyan)
 }
 
 i.fas.fa-file-pdf {
   font-size: 40px; 
-  color: white; 
   margin-left: 4px;
+  color: var(--light-gray);
+}
+
+i.fas.fa-file-pdf:hover {
+  color: var(--light-cyan);
 }
 
 .contact-heading {
