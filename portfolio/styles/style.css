@@ -68,16 +68,31 @@ body {
 }
 
 .bar1, .bar2, .bar3 {
-  width: 30px;
   height: 3px;
   background-color: var(--light-cyan);
   margin: 6px 0;
   transition: var(--transition-speed);
 }
 
+.bar1 {
+  width: 30px;
+}
+
+.bar2 {
+  width: 20px;
+}
+
+.bar3 {
+  width: 10px;
+}
+
 .change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
+  position: relative;
+  top: 9px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 .change .bar2 {
@@ -85,8 +100,13 @@ body {
 }
 
 .change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
+  position: relative;
+  bottom: 9px;
+  width: 30px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .navbar-brand, .nav-link {
@@ -955,7 +975,7 @@ i.fab.fa-twitter-square:hover {
 i.fa.fa-envelope {
   font-size: 40px;
   margin-top: 10px;
-  color: var(--light-gray); 
+  color: var(--dark-gray); 
 }
 
 i.fa.fa-envelope:hover {
@@ -965,7 +985,7 @@ i.fa.fa-envelope:hover {
 i.fas.fa-file-pdf {
   font-size: 40px; 
   margin-left: 4px;
-  color: var(--light-gray);
+  color: var(--dark-gray);
 }
 
 i.fas.fa-file-pdf:hover {
