@@ -80,10 +80,14 @@ body {
 
 .bar2 {
   width: 20px;
+  position: relative;
+  left: 10px;
 }
 
 .bar3 {
   width: 10px;
+  position: relative;
+  left: 20px;
 }
 
 .change .bar1 {
@@ -102,6 +106,7 @@ body {
 .change .bar3 {
   position: relative;
   bottom: 9px;
+  left: 0;
   width: 30px;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
