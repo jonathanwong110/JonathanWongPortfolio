@@ -210,7 +210,7 @@ body {
 
 .introduction-button {
   border: 2px solid var(--light-cyan);
-  padding: 20px 28px;
+  padding: 15px 21px;
   letter-spacing: 2px;
   font-size: 18px;
   border-radius: var(--border-radius);
