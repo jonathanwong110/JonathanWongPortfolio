@@ -234,12 +234,19 @@ body {
   transition-duration: var(--transition-speed);
 }
 
-.introduction-button:hover .view-work-icon-right, .introduction-button .view-work-icon-down {
+.introduction-button:hover .view-work-icon-right, .introduction-button {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  transform: rotate(90deg);
+  transition-delay: 0.05s;
+}
+
+/* .introduction-button:hover .view-work-icon-right, .introduction-button .view-work-icon-down {
   display: none;
-}
-.introduction-button:hover .view-work-icon-down {
+} */
+
+/* .introduction-button:hover .view-work-icon-down {
   display: inline;
-}
+} */
 
 /* All Sections */
 
@@ -442,7 +449,7 @@ body {
 
 .project-filter-btn:hover {
   background-color: var(--light-cyan-background-opacity-heavy);
-  color: var(--light-cyan)
+  color: var(--light-cyan);
 }
 
 @media (max-width: 449px) {
