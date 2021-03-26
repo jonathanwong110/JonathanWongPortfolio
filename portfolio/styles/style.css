@@ -151,8 +151,9 @@ body {
   color: var(--light-gray) !important;
 }
 
-.nav-link.active {
+.nav-link:active {
   color: var(--light-cyan) !important;
+  border: 1px solid var(--light-cyan) !important;
 }
 
 .navbar-brand, .nav-link:hover {
