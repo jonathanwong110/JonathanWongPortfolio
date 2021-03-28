@@ -146,14 +146,16 @@ body {
 }
 
 .nav-link {
-  font-size: 16px;
+  font-size: 15px;
   margin-right: 10px;
   color: var(--light-gray) !important;
+  padding: 10px !important;
 }
 
 .nav-link:active {
-  color: var(--light-cyan) !important;
-  border: 1px solid var(--light-cyan) !important;
+  color: var(--light-cyan);
+  border: 1px solid var(--light-cyan);
+  border-radius: var(--border-radius);
 }
 
 .navbar-brand, .nav-link:hover {
@@ -1069,7 +1071,7 @@ i.fas.fa-file-pdf:hover {
 #scroll-to-top-btn {
   position: relative;
   top: 25px;
-  background-color: #4dffd5;
+  background-color: #33ffcf;
   width: 50px;
   height: 50px;
   text-align: center; 
