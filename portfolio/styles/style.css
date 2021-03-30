@@ -85,8 +85,17 @@ body {
 }
 
 .navbar-toggler {
-  display: inline-block;
-  cursor: pointer;
+  /* display: inline-block; */
+  /* cursor: pointer; */
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  height: 57px;
+  border-color: var(--light-cyan);
+}
+
+#navbar-toggler-icon {
+  border: none;
 }
 
 .navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:focus {
