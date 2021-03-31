@@ -85,11 +85,9 @@ body {
 }
 
 .navbar-toggler {
-  /* display: inline-block; */
-  /* cursor: pointer; */
   position: absolute;
   right: 4px;
-  top: 4px;
+  top: 3px;
   height: 57px;
   border-color: var(--light-cyan);
 }
@@ -101,6 +99,7 @@ body {
 .navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:focus {
   outline-color: var(--light-cyan) !important;
   box-shadow: 0 0 3pt 2pt var(--light-cyan) !important;
+  border-radius: 0 !important;
 }
 
 .bar1, .bar2, .bar3 {
@@ -181,10 +180,10 @@ body {
   }
 }
 
-.navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:focus {
+/* .navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:focus {
   outline-color: 1px solid white;
   box-shadow: none;
-}
+} */
 
 /* Background Image */
 
