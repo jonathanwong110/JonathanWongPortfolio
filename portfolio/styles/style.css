@@ -163,7 +163,7 @@ body {
 .nav-link:active {
   color: var(--light-cyan);
   border: 2px solid var(--light-cyan);
-  border-radius: 7px;
+  /* border-radius: 7px; */
   outline-color: var(--light-cyan) !important;
   box-shadow: 0 0 3pt 2pt var(--light-cyan) !important;
   padding: 8px !important;
@@ -761,6 +761,10 @@ body {
 
 .project-media-close-button::before {
   font-size: 24px;
+}
+
+.project-media-close-button:hover {
+  color: var(--light-cyan)
 }
 
 /* Blog Section */
