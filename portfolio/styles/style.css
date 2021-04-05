@@ -360,6 +360,14 @@ body {
   font-size: 23px;
 }
 
+.skill-item-icon:hover .individual-media-text {
+  visibility: visible;
+}
+
+.skill-item-icon:hover {
+  color: var(--light-cyan);
+}
+
 @media (min-width: 320px) {
   .grid-container-skills {
     grid-template-columns: repeat(1, 1fr);
