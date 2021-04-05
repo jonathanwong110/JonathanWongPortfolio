@@ -154,7 +154,7 @@ body {
 }
 
 .nav-link {
-  font-size: 15px;
+  font-size: 16px;
   margin-right: 10px;
   color: var(--light-gray) !important;
   padding: 10px !important;
@@ -162,11 +162,10 @@ body {
 
 .nav-link:active {
   color: var(--light-cyan);
-  border: 2px solid var(--light-cyan);
-  /* border-radius: 7px; */
+  border-radius: 5px;
   outline-color: var(--light-cyan) !important;
   box-shadow: 0 0 3pt 2pt var(--light-cyan) !important;
-  padding: 8px !important;
+  padding: 10px !important;
 }
 
 .navbar-brand, .nav-link:hover {
