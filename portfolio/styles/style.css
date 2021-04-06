@@ -342,6 +342,11 @@ body {
 
 /* Technical Skills */
 
+#skills-subheading {
+  font-size: 20px;
+  text-align: center;
+}
+
 .grid-container-skills {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -354,18 +359,41 @@ body {
   padding: 5px 5px;
   text-align: center;
   margin: 10px;
-}
-
-.skill-item-heading {
-  font-size: 23px;
-}
-
-.skill-item-icon:hover .individual-media-text {
-  visibility: visible;
+  position: relative;
+  display: inline-block;
 }
 
 .skill-item-icon:hover {
   color: var(--light-cyan);
+}
+
+.skill-item .individual-skill-text {
+  visibility: hidden;
+  position: relative;
+  bottom: 100%;
+  right: 0;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.individual-skill-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  border-width: 7px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 1) transparent transparent transparent;
+}
+
+.skill-item:hover .individual-skill-text {
+  visibility: visible;
 }
 
 @media (min-width: 320px) {
