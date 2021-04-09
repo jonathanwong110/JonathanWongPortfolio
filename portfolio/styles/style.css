@@ -162,10 +162,11 @@ body {
 
 .nav-link:active {
   color: var(--light-cyan);
-  border-radius: 5px;
-  outline-color: var(--light-cyan) !important;
-  box-shadow: 0 0 3pt 2pt var(--light-cyan) !important;
-  padding: 10px !important;
+  /* border-radius: 5px; */
+  /* outline-color: var(--light-cyan) !important;
+  box-shadow: 0 0 3pt 2pt var(--light-cyan) !important; */
+  border: 1px solid var(--light-cyan);
+  padding: 9px !important;
 }
 
 .navbar-brand, .nav-link:hover {
