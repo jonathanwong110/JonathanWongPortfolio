@@ -178,11 +178,6 @@ body {
   }
 }
 
-/* .navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:focus {
-  outline-color: 1px solid white;
-  box-shadow: none;
-} */
-
 /* Background Image */
 
 .background-image {
@@ -340,9 +335,11 @@ body {
 
 /* Technical Skills */
 
-#skills-subheading {
+.skills-subheading {
   font-size: 20px;
-  text-align: center;
+  max-width: 930px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .grid-container-skills {
@@ -495,6 +492,18 @@ body {
   .grid-container-skills {
     grid-template-columns: repeat(7, 1fr);
   }
+}
+
+.additional-skills-list {
+  max-width: 930px;
+  padding-left: 20px;
+  list-style-type: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.additional-skills-list li {
+  font-size: 17px;
 }
 
 /* Portfolio */
