@@ -308,6 +308,7 @@ body {
 
 .about-text-link {
   position: relative;
+  white-space: nowrap;
 }
 
 .about-text-link::after {
