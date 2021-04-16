@@ -1039,7 +1039,7 @@ i.fab.fa-linkedin {
 }
 
 i.fab.fa-linkedin:hover {
-  color: #00ffc3;
+  color: #00e6b0;
 }
 
 #linkedin-icon-background {
@@ -1061,7 +1061,7 @@ i.fab.fa-medium {
 }
 
 i.fab.fa-medium:hover {
-  color: #00ffc3;
+  color: #00e6b0;
 }
 
 #medium-icon-background {
@@ -1084,7 +1084,7 @@ i.fab.fa-github-square {
 }
 
 i.fab.fa-github-square:hover {
-  color: #00ffc3;
+  color: #00e6b0;
 }
 
 #github-icon-background {
@@ -1106,7 +1106,7 @@ i.fab.fa-twitter-square {
 }
 
 i.fab.fa-twitter-square:hover {
-  color: #00ffc3;
+  color: #00e6b0;
 }
 
 #twitter-icon-background {
@@ -1184,7 +1184,7 @@ i.fas.fa-file-pdf:hover {
 #scroll-to-top-btn {
   position: relative;
   top: 25px;
-  background-color: #33ffcf;
+  background-color: #00ffc3;
   width: 50px;
   height: 50px;
   text-align: center; 
