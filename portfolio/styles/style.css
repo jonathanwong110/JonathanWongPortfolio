@@ -365,8 +365,9 @@ body {
 
 .skill-item .individual-skill-text {
   visibility: hidden;
-  background-color: black;
-  color: #fff;
+  background-color: var(--navy);
+  color: var(--light-cyan);
+  border: 1px solid var(--light-cyan);
   text-align: center;
   border-radius: 6px;
   padding: 5px 10px;
@@ -440,7 +441,7 @@ body {
   left: 45%;
   border-width: 7px;
   border-style: solid;
-  border-color: rgba(0, 0, 0, 1) transparent transparent transparent;
+  border-color: rgba(100, 255, 218) transparent transparent transparent;
 }
 
 .skill-item:hover .individual-skill-text {
@@ -1009,8 +1010,9 @@ body {
   bottom: 100%;
   right: 0px;
   z-index: 100;
-  background-color: rgba(0, 0, 0, 1);
-  color: #fff;
+  background-color: var(--navy);
+  border: 1px solid var(--light-cyan);
+  color: var(--light-cyan);
   text-align: center;
   padding: 5px 15px;
   border-radius: 5px;
@@ -1023,7 +1025,7 @@ body {
   left: 50%;
   border-width: 7px;
   border-style: solid;
-  border-color: rgba(0, 0, 0, 1) transparent transparent transparent;
+  border-color: rgba(100, 255, 218) transparent transparent transparent;
 }
 
 .individual-media:hover .individual-media-text {
