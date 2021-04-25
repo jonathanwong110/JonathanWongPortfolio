@@ -163,6 +163,7 @@ body {
 .nav-link:active {
   color: var(--light-cyan);
   border: 1px solid var(--light-cyan);
+  border-radius: 3px;
   padding: 9px !important;
 }
 
