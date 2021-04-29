@@ -304,7 +304,7 @@ body {
 }
 
 .about-text {
-  font-size: 20px;
+  font-size: 19px;
 }
 
 .about-text-link {
@@ -338,7 +338,7 @@ body {
 /* Technical Skills */
 
 .skills-subheading {
-  font-size: 20px;
+  font-size: 19px;
   max-width: 930px;
   margin-left: auto;
   margin-right: auto;
@@ -936,7 +936,7 @@ body {
 }
 
 .blog-title {
-  font-size: 20px;
+  font-size: 19px;
   margin-bottom: 5px;
   height: 66px;
 }
@@ -974,7 +974,7 @@ body {
 }
 
 .contact-text {
-  font-size: 20px;
+  font-size: 19px;
 }
 
 .get-in-touch-container {
@@ -1144,7 +1144,7 @@ i.fas.fa-file-pdf:hover {
 }
 
 .contact-heading {
-  font-size: 20px;
+  font-size: 19px;
 }
 
 .media-grid-contact {
