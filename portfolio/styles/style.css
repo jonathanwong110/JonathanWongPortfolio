@@ -687,6 +687,7 @@ body {
   background-color: rgb(100, 255, 218, 0.1);
   color: var(--light-cyan);
   opacity: 1;
+  transition-duration: var(--transition-speed);
 }
 
 .grid-item-project:hover .learn-more-button  {
