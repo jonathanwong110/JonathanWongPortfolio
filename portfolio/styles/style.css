@@ -206,9 +206,9 @@ body {
 
 @media (max-width: 820px) {
   #highlighted-name {
-    font-size: 10vw;
+    font-size: 8vw;
   }
-  .background-text {
+  .non-name-background-text {
     white-space: normal;
     font-size: 6vw;
   }
@@ -218,8 +218,8 @@ body {
   #highlighted-name {
     font-size: 48px;
   }
-  .background-text {
-    font-size: 36px;
+  .non-name-background-text {
+    font-size: 30px;
   }
 }
 
