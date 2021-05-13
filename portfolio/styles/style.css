@@ -697,7 +697,7 @@ body {
 }
 
 .learn-more-button:hover {
-  background-color: rgb(100, 255, 218, 0.1);
+  background-color: rgb(100, 255, 218, 0.2);
   color: var(--light-cyan);
   opacity: 1;
   transition-duration: var(--transition-speed);
@@ -920,7 +920,7 @@ body {
 }
 
 .grid-container-blog-posts:hover > .blog-post-link {
-  opacity: 0.4;
+  opacity: 0.3;
 }
 
 .grid-container-blog-posts:hover > .blog-post-link:hover {
