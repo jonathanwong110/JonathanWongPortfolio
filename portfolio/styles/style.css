@@ -1048,10 +1048,10 @@ body {
 }
 
 i.fab.fa-linkedin {
-  font-size: 54px;
+  font-size: 58px;
   color: var(--dark-gray); 
   position: relative; 
-  bottom: 1px;
+  bottom: -1px;
   z-index: 100;
 }
 
