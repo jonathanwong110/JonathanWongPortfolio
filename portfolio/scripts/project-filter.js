@@ -1,5 +1,5 @@
-filterSelection("all")
-function filterSelection(c) {
+filterProjectSelection("all")
+function filterProjectSelection(c) {
   var x, i;
   x = document.getElementsByClassName("grid-item-project");
   if (c == "all") c = "";

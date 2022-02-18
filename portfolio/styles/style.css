@@ -289,7 +289,7 @@ body {
 }
 
 
-#about, #skills, #portfolio, #blog, #contact {
+#about, #work, #skills, #portfolio, #blog, #contact {
   margin-right: auto;
   margin-left: auto;
 }
@@ -346,6 +346,72 @@ body {
 .about-text-link:hover {
   text-decoration: none;
   transition-delay: 0.1s;
+}
+
+/* Work */
+
+/* #currentJob {
+  color: var(--navy);
+} */
+
+.tablink {
+  border-radius: var(--border-radius);
+  height: 50px;
+  width: 150px;
+  background-color: var(--navy);
+  border: 2px solid var(--light-cyan);
+  color: var(--light-cyan);
+  opacity: 0.6;
+  font-size: 17px;
+  transition-duration: var(--transition-speed);
+}
+
+.tablink:focus {
+  outline: none;
+}
+
+.tablink.clicked {
+  background-color: var(--light-cyan);
+  color: #020c1b;
+  opacity: 1;
+}
+
+.tablink.clicked:hover {
+  background-color: var(--light-cyan);
+  color: #020c1b;
+  opacity: 1;
+}
+
+.tablink:hover {
+  background-color: var(--light-cyan-background-opacity-heavy);
+  color: var(--light-cyan);
+}
+
+.tabcontent {
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+  margin: 0px 0px 16px;
+}
+
+.job-description {
+  list-style: none;
+}
+
+.job-title {
+  font-size: 19px;
+}
+
+.job-description li::before  {
+  content: "\2022";
+  color: var(--light-cyan);
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+
+.job-points {
+  margin-bottom: 5px;
 }
 
 /* Technical Skills */

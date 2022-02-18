@@ -53,6 +53,9 @@
           <a class="nav-link" id="nav-about" onclick="scrollToSection('about')">About</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" id="nav-skills" onclick="scrollToSection('work')">Work</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" id="nav-skills" onclick="scrollToSection('skills')">Skills</a>
         </li>
         <li class="nav-item">
@@ -139,6 +142,82 @@
 
   </section>
 
+  <!-- Work Section -->
+
+  <section id="work" class="section">
+
+    <div class="section-heading-above-space"></div>
+    <h1 class="section-heading">WORK</h1>
+    <hr class="section-heading-underline">
+    <div class="section-heading-under-space"></div>
+
+    <div class="container">
+
+      <button class="tablink" onclick="openPage('dow jones', this)" id="currentJob">Dow Jones</button>
+      <button class="tablink" onclick="openPage('infosys', this)">Infosys</button>
+      <button class="tablink" onclick="openPage('whcc', this)">WHCC</button>
+
+      <div id="dow jones" class="tabcontent">
+
+        <div class="job-title">Application Developer <span style="color: #64FFDA">@ Dow Jones</span></div>
+
+        <div class="breaks" style="height: 10px"></div>
+
+        <div class="job-duration">November 2021 - Present</div>
+
+        <div class="breaks" style="height: 10px"></div>
+
+        <ul class="job-description">
+          <li class="job-points">Develop configuration files to convert REST/SOAP requests to SOAP/REST responses between upstream and downstream systems</li>
+          <li class="job-points">Create queues to enable communication between different applications to minimize complexity and runtime dependencies</li>
+          <li class="job-points">Support technical team deployment with activities to ensure a smooth go-live of new processes or product or system</li>
+          <li class="job-points">Support trouble-shoot issues, document process, review checklists, and develop a reference implementation</li>
+        </ul>
+
+      </div>
+
+      <div id="infosys" class="tabcontent">
+
+        <div class="job-title">Associate <span style="color: #64FFDA">@ Infosys</span></div>
+
+        <div class="breaks" style="height: 10px"></div>
+
+        <div class="job-duration">June 2021 - Present</div>
+
+        <div class="breaks" style="height: 10px"></div>
+
+        <ul class="job-description">
+          <li class="job-points">Independently develop, review and test code using Java, Angular and Spring Boot</li>
+          <li class="job-points">Collaborate with colleagues in order to create innovative, high-quality and defect-free solutions to meet clients' business needs</li>
+        </ul>
+
+      </div>
+
+      <div id="whcc" class="tabcontent">
+
+        <div class="job-title">Website Associate <span style="color: #64FFDA">@ Whitney Hu for City Council</span></div>
+
+        <div class="breaks" style="height: 10px"></div>
+
+        <div class="job-duration">June 2021 - Present</div>
+
+        <div class="breaks" style="height: 10px"></div>
+
+        <ul class="job-description">
+          <li class="job-points">Coordinate with the Project Director to develop, format and deploy content</li>
+          <li class="job-points">Assist and support in the upkeep and maintenance the website</li>
+          <li class="job-points">Aid in the Restaurant Directory Outreach via community outreach to support restaurants in the campaign district</li>
+        </ul>
+
+      </div>
+
+
+    </div>
+
+    <div class="breaks" style="height: 120px"></div>
+
+  </section>
+
   <!-- Skills Section -->
 
   <section id="skills" class="section">
@@ -205,7 +284,8 @@
       <div class="breaks" style="height: 80px"></div>
       <p class="skills-subheading">ADDITIONAL</p>
       <ul class="additional-skills-list">
-        <li><i class="fa fa-check" style="margin-right: 10px;"></i><span style="font-style: italic;">Exposure</span>: STATA, SPSS</li>
+        <li><i class="fa fa-check" style="margin-right: 10px;"></i><span style="font-style: italic;">Exposure</span>:
+          STATA, SPSS</li>
       </ul>
 
     </div>
@@ -226,10 +306,10 @@
     <div class="container">
 
       <div id="project-filter-btn-container">
-        <button class="project-filter-btn active" onclick="filterSelection('all')"> ALL </button>
-        <button class="project-filter-btn" onclick="filterSelection('react')"> REACT-JS </button>
-        <button class="project-filter-btn" onclick="filterSelection('ruby')"> RUBY/RAILS </button>
-        <button class="project-filter-btn" onclick="filterSelection('javascript')"> JAVASCRIPT</button>
+        <button class="project-filter-btn active" onclick="filterProjectSelection('all')"> ALL </button>
+        <button class="project-filter-btn" onclick="filterProjectSelection('react')"> REACT-JS </button>
+        <button class="project-filter-btn" onclick="filterProjectSelection('ruby')"> RUBY/RAILS </button>
+        <button class="project-filter-btn" onclick="filterProjectSelection('javascript')"> JAVASCRIPT</button>
       </div>
 
       <div class="breaks" style="height: 60px"></div>
@@ -848,6 +928,7 @@
 
   <script src="portfolio/scripts/navbar.js"></script>
   <script src="portfolio/scripts/scroll.js"></script>
+  <script src="portfolio/scripts/job-filter.js"></script>
   <script src="portfolio/scripts/project-filter.js"></script>
   <script src="portfolio/scripts/slideshow.js"></script>
 
