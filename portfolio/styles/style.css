@@ -96,10 +96,15 @@ body {
   border: none;
 }
 
-.navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:focus {
+/* .navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:focus {
   outline-color: var(--light-cyan) !important;
   box-shadow: 0 0 3pt 2pt var(--light-cyan) !important;
   border-radius: 0 !important;
+} */
+
+.navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 .bar1, .bar2, .bar3 {
@@ -162,7 +167,7 @@ body {
 
 .nav-link:active {
   color: var(--light-cyan);
-  border: 1px solid var(--light-cyan);
+  border: 1px solid var(--navy);
   border-radius: 3px;
   padding: 9px !important;
 }
