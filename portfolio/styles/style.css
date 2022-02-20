@@ -295,7 +295,7 @@ body {
 }
 
 @media (max-width: 1300px) {
-  #about, #contact {
+  #about, #contact, #work {
     margin-left: 10%;
     margin-right: 10%;
   }
@@ -399,29 +399,31 @@ body {
 
 .tabcontent {
   display: none;
-  padding: 100px 20px;
   height: 100%;
-  margin: 0px 0px 16px;
+  max-width: 930px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .job-description {
-  list-style: none;
+  list-style-position: outside;
+  margin-right: 100px;
 }
 
 .job-title {
   font-size: 19px;
 }
 
-.job-description li::before  {
-  content: "\2022";
-  color: var(--light-cyan);
-  display: inline-block; 
-  width: 1em;
-  margin-left: -1em;
-}
-
 .job-points {
   margin-bottom: 5px;
+}
+
+.job-description li::marker  {
+  color: var(--light-cyan);
+  content: "✓  ";
+  font-weight: bold;
+  position: relative;
+  margin-right: 10px;
 }
 
 @media (max-width: 449px) {
@@ -489,61 +491,67 @@ body {
 .fab.fa-js-square + .individual-skill-text {
   position: absolute;
   bottom: 100%;
-  left: 0px;
+  left: 10%;
+}
+
+.fab.fa-java + .individual-skill-text {
+  position: absolute;
+  bottom: 100%;
+  left: 15%;
 }
 
 .fab.fa-react + .individual-skill-text {
   position: absolute;
   bottom: 100%;
-  left: 15px;
+  left: 15%;
 }
 
 .far.fa-gem + .individual-skill-text {
   position: absolute;
   bottom: 100%;
-  left: 23px;
+  left: 15%;
+}
+
+.fab.fa-angular + .individual-skill-text {
+  position: absolute;
+  bottom: 100%;
+  left: 15%;
 }
 
 .fab.fa-html5 + .individual-skill-text {
   position: absolute;
   bottom: 100%;
-  left: 20px;
+  left: 15%;
 }
 
 .fab.fa-css3-alt + .individual-skill-text {
   position: absolute;
   bottom: 100%;
-  left: 25px;
+  left: 15%;
 }
 
 .fas.fa-database + .individual-skill-text {
   position: absolute;
   bottom: 100%;
-  left: 20px;
-}
-
-.fab.fa-bootstrap + .individual-skill-text {
-  position: absolute;
-  bottom: 100%;
-  left: 0;
+  left: 15%;
 }
 
 .fab.fa-squarespace + .individual-skill-text {
   position: absolute;
   bottom: 100%;
-  left: -12px;
+  left: 15%;
 }
 
 .fas.fa-file-powerpoint + .individual-skill-text {
   position: absolute;
   bottom: 100%;
-  left: -8px;
+  left: 15%;
 }
 
 .fas.fa-file-excel + .individual-skill-text {
   position: absolute;
   bottom: 100%;
-  left: 15px;
+  left: 15%;
 }
 
 .individual-skill-text::after {
@@ -617,7 +625,16 @@ body {
 }
 
 .additional-skills-list li {
+  margin-left: 15px;
   font-size: 17px;
+}
+
+.additional-skills-list li::marker  {
+  color: var(--light-cyan);
+  content: "✓  ";
+  font-weight: bold;
+  position: relative;
+  margin-right: 10px;
 }
 
 /* Portfolio */
