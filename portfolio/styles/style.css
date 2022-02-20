@@ -420,7 +420,7 @@ body {
 
 .job-description li::marker  {
   color: var(--light-cyan);
-  content: "✓ ";
+  content: "✓  ";
   font-weight: bold;
   position: relative;
   margin-right: 10px;
@@ -631,7 +631,7 @@ body {
 
 .additional-skills-list li::marker  {
   color: var(--light-cyan);
-  content: "✓ ";
+  content: "✓  ";
   font-weight: bold;
   position: relative;
   margin-right: 10px;
