@@ -179,14 +179,12 @@ body {
   }
 }
 
-/* Background Image */
+/* Home */
 
-.background-image {
+#home {
   width: 100vw;
   height: 100vh;
 }
-
-/* Text on Background Image */
 
 .background-text {
   position: absolute;
