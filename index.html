@@ -135,10 +135,10 @@
           <ul class="skills-container">
             <li class="skill-item">JavaScript (ES6+)</li>
             <li class="skill-item">Java</li>
-            <li class="skill-item">Ruby</li>  
+            <li class="skill-item">Python</li>  
             <li class="skill-item">React</li>  
             <li class="skill-item">Angular</li>  
-            <li class="skill-item">SquareSpace</li>
+            <li class="skill-item">Ruby</li>
           </ul>
 
         </div>
@@ -249,8 +249,9 @@
       <div id="project-filter-btn-container">
         <button class="project-filter-btn active" onclick="filterProjectSelection('all')"> ALL </button>
         <button class="project-filter-btn" onclick="filterProjectSelection('react')"> REACT-JS </button>
-        <button class="project-filter-btn" onclick="filterProjectSelection('ruby')"> RUBY/RAILS </button>
         <button class="project-filter-btn" onclick="filterProjectSelection('javascript')"> JAVASCRIPT</button>
+        <button class="project-filter-btn" onclick="filterProjectSelection('python')"> PYTHON </button>
+        <button class="project-filter-btn" onclick="filterProjectSelection('ruby')"> RUBY/RAILS </button>
       </div>
 
       <div class="breaks" style="height: 60px"></div>
@@ -424,6 +425,50 @@
                   <a href="https://youtu.be/mMR4z6N8xDA" target="_blank">
                     <button class="project-media-button">
                       <i class="fas fa-external-link-alt project-media-button-icon"></i>Demo
+                    </button>
+                  </a>
+                  <i class="fas fa-times project-media-close-button" data-dismiss="modal"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="grid-item-project python">
+
+          <img class="project-image" src="portfolio/img/projects/thumbnails/thumbnail-weightedaverage.PNG"
+            alt="portfolio image">
+
+          <div class="project-container">
+            <div class="project-title">GradeCalc</div>
+            <div class="project-technology">Python</div>
+          </div>
+
+          <button type="button" class="learn-more-button" data-toggle="modal" data-target=".bd-fourth-modal-lg">
+            LEARN MORE
+          </button>
+
+          <div class="modal fade bd-fourth-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content">
+                <img class="project-modal-image" src="portfolio/img/projects/thumbnails/thumbnail-weightedaverage.PNG"
+                  alt="portfolio image">
+
+                <div class="project-modal-information-container">
+                  <div class="project-modal-information-title">
+                    GradeCalc
+                  </div>
+                  <div class="project-modal-information-description">
+                    Application that assists students monitor their overall performance in a class
+                  </div>
+                  <div class="modal-footer">
+                  </div>
+                  <p class="project-modal-information-tech">Built using Python, Django</p>
+                  <a href="https://github.com/jonathanwong110/WeightedAverage" target="_blank">
+                    <button class="project-media-button">
+                      <i class="fas fa-external-link-alt project-media-button-icon"></i>GitHub
                     </button>
                   </a>
                   <i class="fas fa-times project-media-close-button" data-dismiss="modal"></i>
