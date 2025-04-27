@@ -288,6 +288,8 @@
 
       <div id="project-filter-btn-container">
         <button class="project-filter-btn active" onclick="filterProjectSelection('all')"> ALL </button>
+        <button class="project-filter-btn" onclick="filterProjectSelection('excel')"> EXCEL </button>
+        <button class="project-filter-btn" onclick="filterProjectSelection('tableau')"> TABLEAU </button>
         <button class="project-filter-btn" onclick="filterProjectSelection('react')"> REACT-JS </button>
         <button class="project-filter-btn" onclick="filterProjectSelection('javascript')"> JAVASCRIPT</button>
         <button class="project-filter-btn" onclick="filterProjectSelection('python')"> PYTHON </button>
@@ -298,7 +300,66 @@
 
       <div class="grid-container-projects">
 
-        <div class="grid-item-project react ruby">
+        <div class="grid-item-project da excel tableau">
+
+          <img class="project-image" src="portfolio/img/projects/thumbnails/thumbnail-international-commodities.png" alt="portfolio image">
+
+          <div class="project-container">
+            <div class="project-title">International Commodities</div>
+            <div class="project-technology">Excel / Tableau</div>
+          </div>
+
+          <button type="button" class="learn-more-button" data-toggle="modal" data-target=".bd-international-commodities-modal-lg">
+            LEARN MORE
+          </button>
+
+          <div class="modal fade bd-international-commodities-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content">
+
+                <div class="slideshow-container">
+                  <div class="portfolio-project-images-international-commodities">
+                    <img class="project-modal-image" src="portfolio/img/projects/fullpictures/fullpicture-international-commodities-1.png">
+                  </div>
+
+                  <div class="portfolio-project-images-international-commodities">
+                    <img class="project-modal-image" src="portfolio/img/projects/fullpictures/fullpicture-international-commodities-2.png">
+                  </div>
+
+                  <div class="portfolio-project-images-international-commodities">
+                    <img class="project-modal-image" src="portfolio/img/projects/fullpictures/fullpicture-international-commodities-3.png">
+                  </div>
+
+                  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                </div>
+
+                <div class="project-modal-information-container">
+                  <div class="project-modal-information-title">
+                    International Commodities
+                  </div>
+                  <div class="project-modal-information-description">
+                    A data analytics visualization project analyzing the KPIs (key performance indicators) of wheat as a global commodity
+                  </div>
+                  <div class="modal-footer">
+                  </div>
+                  <p class="project-modal-information-tech">Dataset cleaned with Excel with visualizations done through Tableau 
+                  </p>
+                  <a href="/projects/international-commodities-project.pdf" target="_blank">
+                    <button class="project-media-button">
+                      <i class="fas fa-external-link-alt project-media-button-icon"></i>See More
+                    </button>
+                  </a>
+                  <i class="fas fa-times project-media-close-button" data-dismiss="modal"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="grid-item-project swe react ruby">
 
           <img class="project-image" src="portfolio/img/projects/thumbnails/thumbnail-gidi.PNG" alt="portfolio image">
 
@@ -358,7 +419,7 @@
 
         </div>
 
-        <div class="grid-item-project react ruby">
+        <div class="grid-item-project swe react ruby">
 
           <img class="project-image" src="portfolio/img/projects/thumbnails/thumbnail-bookstore.PNG"
             alt="portfolio image">
@@ -426,7 +487,7 @@
 
         </div>
 
-        <div class="grid-item-project ruby">
+        <div class="grid-item-project swe ruby">
 
           <img class="project-image" src="portfolio/img/projects/thumbnails/thumbnail-megastore.jpg"
             alt="portfolio image">
@@ -475,7 +536,7 @@
 
         </div>
 
-        <div class="grid-item-project python">
+        <div class="grid-item-project swe python">
 
           <img class="project-image" src="portfolio/img/projects/thumbnails/thumbnail-weightedaverage.PNG"
             alt="portfolio image">
@@ -519,7 +580,7 @@
 
         </div>
 
-        <div class="grid-item-project javascript">
+        <div class="grid-item-project swe javascript">
 
           <img class="project-image" src="portfolio/img/projects/thumbnails/thumbnail-kanban-board.PNG"
             alt="portfolio image">
@@ -556,7 +617,7 @@
                       <i class="fas fa-external-link-alt project-media-button-icon"></i>GitHub
                     </button>
                   </a>
-                  <a href="kanban-board.html" target="_blank">
+                  <a href="/projects/kanban-board.html" target="_blank">
                     <button class="project-media-button">
                       <i class="fas fa-external-link-alt project-media-button-icon"></i>Live
                     </button>
@@ -569,7 +630,7 @@
 
         </div>
 
-        <div class="grid-item-project javascript">
+        <div class="grid-item-project swe javascript">
 
           <img class="project-image" src="portfolio/img/projects/thumbnails/thumbnail-gititdone.PNG"
             alt="portfolio image">
@@ -606,7 +667,7 @@
                       <i class="fas fa-external-link-alt project-media-button-icon"></i>GitHub
                     </button>
                   </a>
-                  <a href="gititdone.html" target="_blank">
+                  <a href="projects/gititdone.html" target="_blank">
                     <button class="project-media-button">
                       <i class="fas fa-external-link-alt project-media-button-icon"></i>Live
                     </button>
@@ -619,7 +680,7 @@
 
         </div>
 
-        <div class="grid-item-project javascript">
+        <div class="grid-item-project swe javascript">
           <img class="project-image" src="portfolio/img/projects/thumbnails/thumbnail-weatherapp.PNG"
             alt="portfolio image">
 
@@ -668,7 +729,7 @@
 
         </div>
 
-        <div class="grid-item-project javascript">
+        <div class="grid-item-project swe javascript">
 
           <img class="project-image" src="portfolio/img/projects/thumbnails/thumbnail-bookmark-tracker.PNG"
             alt="portfolio image">
@@ -704,7 +765,7 @@
                       <i class="fas fa-external-link-alt project-media-button-icon"></i>GitHub
                     </button>
                   </a>
-                  <a href="bookmark-tracker.html" target="_blank">
+                  <a href="projects/bookmark-tracker.html" target="_blank">
                     <button class="project-media-button">
                       <i class="fas fa-external-link-alt project-media-button-icon"></i>Demo
                     </button>
@@ -718,7 +779,7 @@
 
         </div>
 
-        <div class="grid-item-project ruby">
+        <div class="grid-item-project swe ruby">
 
           <img class="project-image" src="portfolio/img/projects/thumbnails/thumbnail-uniqloshopper.jpg"
             alt="portfolio image">

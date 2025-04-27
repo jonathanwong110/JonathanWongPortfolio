@@ -1,5 +1,5 @@
 var slideIndex = [1,1];
-var slideId = ["portfolio-project-images-gidi", "portfolio-project-images-bookstore"]
+var slideId = ["portfolio-project-images-international-commodities", "portfolio-project-images-gidi", "portfolio-project-images-bookstore"]
 showSlides(1, 0);
 showSlides(1, 1);
 
