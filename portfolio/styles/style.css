@@ -283,7 +283,7 @@ body {
 }
 
 
-#about, #work, #skills, #portfolio, #blog, #contact {
+#about, #work, #skills, #projects, #blog, #contact {
   margin-right: auto;
   margin-left: auto;
 }
@@ -296,7 +296,7 @@ body {
 }
 
 @media (max-width: 1300px) {
-  #skills, #portfolio, #blog {
+  #skills, #projects, #blog {
     margin-left: 7%;
     margin-right: 7%;
   }
@@ -483,9 +483,9 @@ body {
   margin-right: 10px;
 }
 
-/* Portfolio */
+/* Projects */
 
-/* Portfolio - Project Filter Buttons */
+/* Projects - Project Filter Buttons */
 
 #project-filter-btn-container {
   display: grid;
