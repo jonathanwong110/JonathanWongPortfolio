@@ -362,6 +362,11 @@ body {
   font-size: 16px;
 }
 
+.skill-item-divider {
+  color:#64FFDA; 
+  font-weight: bold;
+}
+
 /* Work */
 
 #tablink-container {
